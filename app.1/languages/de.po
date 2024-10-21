@@ -1,0 +1,2220 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+
+msgid "Setting roles, please wait..."
+msgstr "Rollen werden gespeichert, bitte warten..."
+
+msgid "Transfers"
+msgstr "Transfer"
+
+msgid ""
+"%s\n"
+"\n"
+"Transfer accepted"
+msgstr ""
+"%s\n"
+"\n"
+"Transfer angenommen"
+
+msgid "Failed to transfer. %s"
+msgstr "Transfer fehlgeschlafen. %s"
+
+msgid "Select transfer"
+msgstr "Transfer auswählen"
+
+msgid "Select end time"
+msgstr "Endzeit auswählen"
+
+msgid "Select start time"
+msgstr "Startzeit auswählen"
+
+msgid "Select date"
+msgstr "Tag auswählen"
+
+msgid "User roles are not supported."
+msgstr "Benutzer-rollen sind nicht unterstützt."
+
+msgid "Select roles"
+msgstr "Rollen auswählen"
+
+msgid "Setting name, please wait..."
+msgstr "Name wird gespeichert, bitte warten..."
+
+msgid "User names are not supported."
+msgstr "Benutzer-Namen werden nicht unterstützt."
+
+msgid "Please enter name"
+msgstr "Bitte Namen eingeben."
+
+msgid "Disable Profile"
+msgstr "Profil deaktivieren"
+
+msgid "Disabling profile..."
+msgstr "Deaktiviere Profil..."
+
+msgid "Disable profile?"
+msgstr "Profil deaktivieren?"
+
+msgid "Enable Profile"
+msgstr "Profil aktivieren"
+
+msgid "Enabling profile..."
+msgstr "Aktiviere Profil..."
+
+msgid "Enable profile?"
+msgstr "Profil aktivieren?"
+
+msgid "Deleting user..."
+msgstr "Lösche Benutzer..."
+
+msgid "Number of days entered must be in the range 1.. 21!"
+msgstr "Anzahl der Tage muss zwischen 1 und 21 liegen!"
+
+msgid "Please return to the application to start the upload process."
+msgstr "Bitte zur Anwendung zurueckkehren, um Hochladen zu beginnen."
+
+msgid "Re-upload %(numTemplates)d templates and %(numProfiles)d profile items?"
+msgstr ""
+"Erneut %(numTemplates)d Fingerabdrücke und %(numProfiles)d Profile hochladen?"
+
+msgid "Profile data not supported by protocol."
+msgstr "Profil-Daten werden vom Protokol nicht unterstützt."
+
+msgid "Re-send profile data"
+msgstr "Profile erneut senden"
+
+msgid "Transactions"
+msgstr "Transaktionen"
+
+msgid "Server-based PIN"
+msgstr "Server-basierte PIN"
+
+msgid ""
+"Lift restriction on next punch for %s?\n"
+"\n"
+"If the user does not punch, the restriction will automatically expire on %s."
+msgstr ""
+
+msgid "Apply settings from itcfg file?"
+msgstr "Einstellungen aus itcfg Datei übernehmen?"
+
+msgid "Secondary DeviceID"
+msgstr "Sekundäre Geräte ID"
+
+msgid "Upgrading template repository"
+msgstr "Aktualisiere Fingerabdruckspeicher"
+
+msgid "Abort"
+msgstr "Abbrechen"
+
+msgid "Ignore"
+msgstr "Ignorieren"
+
+msgid "Please enter ID"
+msgstr "ID eingeben"
+
+msgid "No"
+msgstr "Nein"
+
+#: appDlg.py:106
+msgid "No main menu defined!"
+msgstr "Hauptmenu nicht definiert!"
+
+#: appInitWizard.py:97 applib/gui/appWizard.py:106
+msgid "Terminal is now configured and will restart..."
+msgstr "Terminal ist konfiguriert und startet neu..."
+
+#: appInitWizard.py:99 applib/gui/appWizard.py:108
+msgid "Terminal is now configured and will restart the application..."
+msgstr "Terminal ist konfiguriert und startet neu..."
+
+#: appInitWizard.py:152
+msgid "Preparing Application"
+msgstr ""
+
+#: appInitWizard.py:153 applib/bio/bioEnrolDialog.py:169
+#: applib/bio/bioEnrolDialog.py:377 applib/bio/bioEnrolDialog.py:445
+#: applib/bio/bioInfoDialog.py:25 applib/bio/bioVerifyDialog.py:104
+#: applib/gui/appWizard.py:241 applib/gui/appWizard.py:270
+#: applib/gui/appWizard.py:415 applib/gui/appWizard.py:477
+#: applib/gui/appWizard.py:540 applib/gui/appWizard.py:596
+#: applib/gui/appWizard.py:648 applib/gui/appWizard.py:734
+#: applib/gui/health.py:46 applib/gui/usbDialog.py:115
+#: applib/gui/usbDialog.py:147 applib/utils/busyIndicator.py:77
+#: engine/dynButtons.py:24 engine/dynButtons.py:662
+#: engine/empIdentifyDlg.py:164 engine/empIdentifyDlg.py:166
+#: engine/empIdentifyDlg.py:173 engine/empIdentifyDlg.py:175
+#: engine/empIdentifyDlg.py:181 engine/empVerifyDlg.py:300
+#: engine/empVerifyDlg.py:362 engine/empVerifyDlg.py:405
+#: engine/empVerifyDlg.py:455 engine/empVerifyDlg.py:516
+#: plugins/UsbImportExport.py:85 plugins/assistit.py:64
+#: plugins/clockings/clearClockings.py:94
+#: plugins/clockings/clearClockings.py:104
+#: plugins/clockings/clearClockings.py:119
+#: plugins/clockings/lastClockingsDialog.py:24
+#: plugins/clockings/punchRestrictionsWizardDialog.py:182
+#: plugins/clockings/punchRestrictionsWizardDialog.py:384
+#: plugins/clockings/resendClockings.py:94
+#: plugins/clockings/resendClockings.py:104
+#: plugins/clockings/resendClockings.py:119 plugins/consent/consentDialog.py:44
+#: plugins/consent/consentManagement.py:23 plugins/dataCollection.py:630
+#: plugins/dataCollection.py:799 plugins/holidays.py:40 plugins/holidays.py:60
+#: plugins/holidays.py:87 plugins/profileBadge.py:19
+#: plugins/profileEditor.py:125 plugins/profileLanguage.py:18
+#: plugins/profilePicture.py:93 plugins/profilePicture.py:128
+#: plugins/profilePin.py:18 plugins/profileTemplates.py:21
+#: plugins/profileVerifyMethod.py:20 plugins/relays/relaySchedulesEditor.py:252
+#: plugins/relays/relaySchedulesEditor.py:270
+#: plugins/relays/relaySchedulesEditor.py:291
+#: plugins/relays/relaySchedulesEditor.py:321
+#: plugins/relays/relaySchedulesEditor.py:343
+#: plugins/relays/relaySchedulesEditor.py:390
+#: plugins/relays/relaySchedulesEditor.py:408
+#: plugins/relays/relaySchedulesEditor.py:423 plugins/scheduleOverride.py:29
+#: plugins/timecards.py:226 plugins/tips.py:50 plugins/tips.py:71
+#: plugins/tips.py:99 plugins/traceRoute.py:72 webClient/webWizard.py:52
+#: webClient/webWizard.py:70 webClient/webWizard.py:108
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: appInitWizard.py:163
+msgid "Cancelling..."
+msgstr ""
+
+#: appSetup.py:46
+msgid "No setup menu defined!"
+msgstr "Setupmenu nicht definiert!"
+
+#: applib/application.py:148
+msgid "Terminal configuration changed. Application will restart now..."
+msgstr "Terminal konfiguration geändert. Anwendung startet neu..."
+
+#: applib/bio/bioEnrolDialog.py:50 applib/bio/bioVerifyDialog.py:91
+msgid "Biometric unit not working"
+msgstr "Biometrische Einheit funktioniert nicht!"
+
+#: applib/bio/bioEnrolDialog.py:53
+msgid "No template ID specified!"
+msgstr "Keine Fingerabdruck-ID!"
+
+#: applib/bio/bioEnrolDialog.py:58
+msgid "No finger information available. Please enroll fingers."
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:99
+#, python-format
+msgid "%d finger(s) enrolled. Enrol another finger for this user?"
+msgstr "%d Fingerabdrücke registriert. Weiteren Fingerabdruck hinzufügen?"
+
+#: applib/bio/bioEnrolDialog.py:135
+msgid "Finger template enrolment"
+msgstr "Fingerabdruckregistrierung"
+
+#: applib/bio/bioEnrolDialog.py:158 plugins/profileTemplates.py:19
+msgid "Enrol"
+msgstr "Registrieren"
+
+#: applib/bio/bioEnrolDialog.py:162 applib/bio/bioEnrolDialog.py:441
+msgid "Test"
+msgstr "Test"
+
+#: applib/bio/bioEnrolDialog.py:166 applib/bio/bioEnrolDialog.py:444
+#: applib/gui/appWizard.py:732
+msgid "Save"
+msgstr "Speichern"
+
+#: applib/bio/bioEnrolDialog.py:229
+msgid "Processing data, please wait..."
+msgstr "Bitte warten..."
+
+#: applib/bio/bioEnrolDialog.py:238
+msgid "User successfully enrolled!"
+msgstr "Fingerabdruck für Benutzer erfolgreich registriert!"
+
+#: applib/bio/bioEnrolDialog.py:273
+msgid "Place finger"
+msgstr "Finger platzieren"
+
+#: applib/bio/bioEnrolDialog.py:281
+msgid "No finger detected, cancel enrolment?"
+msgstr "Kein Finger erkannt, Registrierung abbrechen?"
+
+#: applib/bio/bioEnrolDialog.py:286
+msgid "Fingerprints do not match same finger! Try again?"
+msgstr "Fingerabdrücke nicht vom gleichen Finger! Erneut versuchen?"
+
+#: applib/bio/bioEnrolDialog.py:291
+msgid "Fingerprint is of insufficient quality! Try again?"
+msgstr "Qualität des Fingerabdrucks ist unzureichend! Erneut versuchen?"
+
+#: applib/bio/bioEnrolDialog.py:296
+#, python-format
+msgid "Failed to enrol finger: %s"
+msgstr "Fehler beim Registrieren des Fingerabdrucks: %s"
+
+#: applib/bio/bioEnrolDialog.py:301
+msgid "Processing templates, please wait..."
+msgstr "Fingerabdrücke werden verarbeitet, bitte warten..."
+
+#: applib/bio/bioEnrolDialog.py:304
+msgid "Unable to enrol finger! Try again?"
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:312
+#, python-format
+msgid ""
+"Your fingerprint quality of %(fingerQuality)s%% is below the recommended "
+"level of %(warnLevel)s%%."
+msgstr ""
+"Qualität des Fingerabdrucks von %(fingerQuality)s%% ist unterhalb des "
+"empfohlenen Niveaus von %(warnLevel)s%%."
+
+#: applib/bio/bioEnrolDialog.py:346
+msgid "Replace finger"
+msgstr "Finger erneut platzieren"
+
+#: applib/bio/bioEnrolDialog.py:350
+msgid "Processing..."
+msgstr "Verarbeite..."
+
+#: applib/bio/bioEnrolDialog.py:355
+msgid "Remove finger"
+msgstr "Finger entfernen"
+
+#: applib/bio/bioEnrolDialog.py:370
+#, python-format
+msgid "Finger template quality is %s%%."
+msgstr "Qualität des Fingerabdrucks ist %s%%."
+
+#: applib/bio/bioEnrolDialog.py:372
+msgid "Finger template acquired."
+msgstr "Fingerabdruck geladen."
+
+#: applib/bio/bioEnrolDialog.py:375 plugins/consent/consentDialog.py:32
+#: plugins/consent/consentDialog.py:42
+msgid "Accept"
+msgstr "Akzeptieren"
+
+#: applib/bio/bioEnrolDialog.py:376 webClient/webWizard.py:106
+msgid "Retry"
+msgstr "Nochmal"
+
+#: applib/bio/bioEnrolDialog.py:388 applib/bio/bioVerifyDialog.py:72
+msgid "Verify..."
+msgstr "Verifiziere..."
+
+#: applib/bio/bioEnrolDialog.py:391
+msgid "User verified successfully!"
+msgstr "Benutzer erfolgreich verifiziert!"
+
+#: applib/bio/bioEnrolDialog.py:394 applib/bio/bioVerifyDialog.py:117
+#: applib/bio/bioVerifyDialog.py:144
+msgid "User could not be verified!"
+msgstr "Benutzer konnte nicht verifiziert werden!"
+
+#: applib/bio/bioEnrolDialog.py:399 applib/bio/bioVerifyDialog.py:122
+#, python-format
+msgid "Error verifying! (%s)"
+msgstr "Fehler beim Verifizieren! (%s)"
+
+#: applib/bio/bioEnrolDialog.py:433
+msgid "Please select finger"
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:482
+msgid "You cannot enrol more fingers! Please delete one first."
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:488
+#, python-format
+msgid "Place finger (%s)"
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:503
+#, python-format
+msgid ""
+"Your \"%s\" finger is already enrolled.\n"
+"Delete or re-enrol the finger?"
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:504
+msgid "Re-Enrol"
+msgstr ""
+
+#: applib/bio/bioEnrolDialog.py:505 plugins/profilePicture.py:25
+#: plugins/relays/relaySchedulesEditor.py:159
+#: plugins/relays/relaySchedulesEditor.py:208
+msgid "Delete"
+msgstr "Löschen"
+
+#: applib/bio/bioEnrolDialog.py:506 applib/gui/appWizard.py:269
+#: applib/gui/appWizard.py:414 applib/gui/appWizard.py:476
+#: applib/gui/appWizard.py:539 applib/gui/appWizard.py:595
+#: applib/gui/appWizard.py:647 applib/gui/appWizard.py:733
+#: applib/gui/health.py:26 applib/gui/health.py:45 applib/gui/usbDialog.py:146
+#: engine/dynButtons.py:23 plugins/UsbImportExport.py:87
+#: plugins/clockings/clearClockings.py:18
+#: plugins/clockings/clearClockings.py:118
+#: plugins/clockings/resendClockings.py:18
+#: plugins/clockings/resendClockings.py:118 plugins/dataCollection.py:631
+#: plugins/dataCollection.py:798 plugins/empOptions.py:30
+#: plugins/holidays.py:59 plugins/holidays.py:86 plugins/profileEditor.py:22
+#: plugins/profileEditor.py:124 plugins/profilePicture.py:26
+#: plugins/profilePicture.py:127 plugins/profileTemplates.py:20
+#: plugins/relays/relaySchedulesEditor.py:93
+#: plugins/relays/relaySchedulesEditor.py:121
+#: plugins/relays/relaySchedulesEditor.py:160
+#: plugins/relays/relaySchedulesEditor.py:176
+#: plugins/relays/relaySchedulesEditor.py:209
+#: plugins/relays/relaySchedulesEditor.py:251
+#: plugins/relays/relaySchedulesEditor.py:269
+#: plugins/relays/relaySchedulesEditor.py:290
+#: plugins/relays/relaySchedulesEditor.py:320
+#: plugins/relays/relaySchedulesEditor.py:342
+#: plugins/relays/relaySchedulesEditor.py:389
+#: plugins/relays/relaySchedulesEditor.py:407
+#: plugins/relays/relaySchedulesEditor.py:422 plugins/testBio.py:290
+#: plugins/timecards.py:197 plugins/tips.py:70 plugins/tips.py:98
+#: webClient/webWizard.py:51 webClient/webWizard.py:69
+#: webClient/webWizard.py:107
+msgid "Back"
+msgstr "Zurück"
+
+#: applib/bio/bioFinger.py:7
+msgid "left pinky"
+msgstr ""
+
+#: applib/bio/bioFinger.py:8
+msgid "left ring"
+msgstr ""
+
+#: applib/bio/bioFinger.py:9
+msgid "left middle"
+msgstr ""
+
+#: applib/bio/bioFinger.py:10
+msgid "left index"
+msgstr ""
+
+#: applib/bio/bioFinger.py:11
+msgid "left thumb"
+msgstr ""
+
+#: applib/bio/bioFinger.py:12
+msgid "right thumb"
+msgstr ""
+
+#: applib/bio/bioFinger.py:13
+msgid "right index"
+msgstr ""
+
+#: applib/bio/bioFinger.py:14
+msgid "right middle"
+msgstr ""
+
+#: applib/bio/bioFinger.py:15
+msgid "right ring"
+msgstr ""
+
+#: applib/bio/bioFinger.py:16
+msgid "right pinky"
+msgstr ""
+
+#: applib/bio/bioInfoDialog.py:24
+msgid "Biometric info"
+msgstr "Biometrieleser"
+
+#: applib/bio/bioInfoDialog.py:32 applib/bio/bioSyncDialog.py:237
+#: applib/gui/usbDialog.py:179
+msgid "Please wait..."
+msgstr "Bitte warten..."
+
+#: applib/bio/bioInfoDialog.py:33
+msgid "Total users"
+msgstr "Anzahl Nutzer"
+
+#: applib/bio/bioInfoDialog.py:35
+msgid "Loaded users"
+msgstr "Geladene Nutzer"
+
+#: applib/bio/bioInfoDialog.py:37
+msgid "Templates in reader"
+msgstr "Fingerabdrücke im Gerät"
+
+#: applib/bio/bioInfoDialog.py:38
+msgid "Sync templates"
+msgstr "Fingerabdrücke abgleichen"
+
+#: applib/bio/bioInfoDialog.py:55
+msgid "Reload ALL templates from database to reader?"
+msgstr "Alle Fingerabdrücke erneut auf Biometrieleser übertragen?"
+
+#: applib/bio/bioInfoDialog.py:57
+msgid "Preparing templates for reloading..."
+msgstr "Bereite Fingerabdrücke für Abgleich vor..."
+
+#: applib/bio/bioSyncDialog.py:57
+#, python-format
+msgid "Synchronisation failed: %s"
+msgstr "Abgleich fehlgeschlagen: %s"
+
+#: applib/bio/bioSyncDialog.py:224
+msgid "Updating finger templates..."
+msgstr "Fingerabdrücke werden aktualisiert..."
+
+#: applib/bio/bioSyncDialog.py:225
+msgid "Finish later"
+msgstr "Später"
+
+#: applib/bio/bioSyncDialog.py:253
+#, python-format
+msgid "Synchronisation finished with %d warnings."
+msgstr "Abgleich beendet, %d Warnungen."
+
+#: applib/bio/bioTemplates.py:326
+msgid "Biometric synchronisation errors"
+msgstr "Synchronisationsfehler mit Biometrieleser"
+
+#: applib/bio/bioTemplates.py:330
+msgid "Biometric unit not synchronised"
+msgstr "Biometrieleser ist nicht synchronisiert"
+
+#: applib/bio/bioTemplates.py:334 engine/empVerifyDlg.py:223
+#: plugins/bioInfo.py:18
+msgid "Biometric"
+msgstr "Biometrieleser"
+
+#: applib/bio/bioVerifyDialog.py:95
+msgid "User does not support biometric verification!"
+msgstr "Nutzer unterstützt biometrische Verifikation nicht!"
+
+#: applib/bio/bioVerifyDialog.py:100
+msgid "No biometric data available to verify user!"
+msgstr "Keine biometrischen Daten vorhanden, um Benutzer zu verifizieren!"
+
+#: applib/bio/bioVerifyDialog.py:104
+msgid "Help"
+msgstr ""
+
+#: applib/bio/bioVerifyDialog.py:174
+msgid "Enrolled fingers..."
+msgstr ""
+
+#: applib/bio/bioVerifyDialog.py:175 applib/gui/helpDlg.py:14
+#: applib/gui/settingsEditor.py:411 engine/autoEnrolDlg.py:67
+#: engine/dynButtons.py:22 engine/dynButtons.py:663
+#: engine/empIdentifyDlg.py:180 engine/empVerifyDlg.py:299
+#: engine/empVerifyDlg.py:454 engine/empVerifyDlg.py:515
+#: plugins/clockings/clearClockings.py:169
+#: plugins/clockings/lastClockingsDialog.py:67
+#: plugins/clockings/punchRestrictionsWizardDialog.py:383
+#: plugins/clockings/resendClockings.py:169
+#: plugins/consent/consentManagement.py:25 plugins/empInfo.py:93
+#: plugins/empInfo.py:102 plugins/holidays.py:85 plugins/ntpTest.py:28
+#: plugins/profileBadge.py:18 plugins/profileBadge.py:24
+#: plugins/profileEditor.py:19 plugins/profileLanguage.py:17
+#: plugins/profileLanguage.py:30 plugins/profilePicture.py:30
+#: plugins/profilePicture.py:56 plugins/profilePicture.py:63
+#: plugins/profilePicture.py:67 plugins/profilePicture.py:89
+#: plugins/profilePicture.py:98 plugins/profilePin.py:17
+#: plugins/profilePin.py:22 plugins/profilePin.py:37
+#: plugins/profileTemplates.py:25 plugins/profileTemplates.py:42
+#: plugins/profileVerifyMethod.py:19 plugins/profileVerifyMethod.py:33
+#: plugins/scheduleOverride.py:28 plugins/staticText.py:21
+#: plugins/staticText.py:37 plugins/tips.py:97 plugins/traceRoute.py:71
+#: plugins/transfer.py:127 plugins/viewSchedules.py:16
+msgid "OK"
+msgstr "OK"
+
+#: applib/db/tblTransactions.py:338
+msgid "Transaction buffer full"
+msgstr "Transaktionsbuffer voll"
+
+#: applib/db/tblTransactions.py:340
+msgid "Transaction buffer level high"
+msgstr "Transaktionsbuffer fast voll"
+
+#: applib/db/tblTransactions.py:344
+msgid "Transaction Status"
+msgstr "Transaktionsstatus"
+
+#: applib/db/tblTransactions.py:356 plugins/clockings/clearClockings.py:45
+#: plugins/clockings/resendClockings.py:45
+msgid "Unsent"
+msgstr "Noch nicht gesendet"
+
+#: applib/db/tblTransactions.py:357 plugins/clockings/clearClockings.py:44
+#: plugins/clockings/resendClockings.py:44
+msgid "Total"
+msgstr "Gesamt"
+
+#: applib/db/tblTransactions.py:358
+msgid "Warn Level"
+msgstr "Warn. Level"
+
+#: applib/db/tblTransactions.py:359
+msgid "Max Level"
+msgstr "Max. Level"
+
+#: applib/db/tblTransactions.py:361
+msgid "Last Error"
+msgstr "Letzter Fehler"
+
+#: applib/gui/__init__.py:17 applib/gui/__init__.py:30
+msgid "default:LTR"
+msgstr "default:LTR"
+
+#: applib/gui/appWizard.py:60
+msgid "Please wait while saving settings and configuring the terminal..."
+msgstr "Einstellungen werden gespeichert, bitte warten..."
+
+#: applib/gui/appWizard.py:237
+#, python-format
+msgid ""
+"Application setup wizard\n"
+"%(appName)s(%(appVersion)s)"
+msgstr ""
+"Anwendungsassistent\n"
+"%(appName)s(%(appVersion)s)"
+
+#: applib/gui/appWizard.py:240 applib/gui/appWizard.py:413
+#: applib/gui/appWizard.py:475 applib/gui/appWizard.py:538
+#: applib/gui/appWizard.py:594 applib/gui/appWizard.py:646
+#: applib/gui/usbDialog.py:114 applib/gui/usbDialog.py:145
+#: plugins/assistit.py:63 plugins/clockings/clearClockings.py:93
+#: plugins/clockings/clearClockings.py:103
+#: plugins/clockings/clearClockings.py:117
+#: plugins/clockings/resendClockings.py:93
+#: plugins/clockings/resendClockings.py:103
+#: plugins/clockings/resendClockings.py:117 plugins/dataCollection.py:632
+#: plugins/dataCollection.py:797 plugins/holidays.py:39 plugins/holidays.py:58
+#: plugins/relays/relaySchedulesEditor.py:250
+#: plugins/relays/relaySchedulesEditor.py:268
+#: plugins/relays/relaySchedulesEditor.py:289
+#: plugins/relays/relaySchedulesEditor.py:319
+#: plugins/relays/relaySchedulesEditor.py:341
+#: plugins/relays/relaySchedulesEditor.py:388
+#: plugins/relays/relaySchedulesEditor.py:406
+#: plugins/relays/relaySchedulesEditor.py:421 plugins/tips.py:49
+#: plugins/tips.py:69 webClient/webWizard.py:49 webClient/webWizard.py:67
+msgid "Next"
+msgstr "Weiter"
+
+#: applib/gui/appWizard.py:254
+#, python-format
+msgid ""
+"Configuring %(appName)s(%(appVersion)s)\n"
+"Please wait..."
+msgstr ""
+"Konfiguriere %(appName)s(%(appVersion)s)\n"
+"Bitte warten..."
+
+#: applib/gui/appWizard.py:266
+msgid "Configure network settings?"
+msgstr "Netzwerk konfigurieren?"
+
+#: applib/gui/appWizard.py:267 plugins/consent/consentDialog.py:31
+#: plugins/timecards.py:198 webClient/webWizard.py:105
+msgid "Skip"
+msgstr "Überspringen"
+
+#: applib/gui/appWizard.py:268 engine/empVerifyDlg.py:403
+#: plugins/profilePicture.py:126
+msgid "Yes"
+msgstr "Ja"
+
+#: applib/gui/appWizard.py:311
+msgid "Applying settings..."
+msgstr "Einstellungen werden angewendet..."
+
+#: applib/gui/appWizard.py:364
+msgid "Configuring application..."
+msgstr "Konfiguriere Anwendung..."
+
+#: applib/gui/appWizard.py:412
+msgid "Select region"
+msgstr "Region auswählen"
+
+#: applib/gui/appWizard.py:474
+msgid "Select country"
+msgstr "Land auswählen"
+
+#: applib/gui/appWizard.py:537 plugins/profileLanguage.py:16
+msgid "Select language"
+msgstr "Sprache auswählen"
+
+#: applib/gui/appWizard.py:593
+msgid "Select timezone"
+msgstr "Zeitzone auswählen"
+
+#: applib/gui/appWizard.py:633
+msgid "Enter device ID"
+msgstr "Geräte ID eingeben"
+
+#: applib/gui/appWizard.py:731
+msgid "Wizard completed"
+msgstr "Assistent abgeschlossen"
+
+#: applib/gui/health.py:25
+msgid "Health Status"
+msgstr "Terminal Status"
+
+#: applib/gui/health.py:30
+msgid "Bad"
+msgstr "Schlecht"
+
+#: applib/gui/health.py:30 applib/utils/mediaDownload.py:204
+msgid "Good"
+msgstr "Gut"
+
+#: applib/gui/msg.py:169 applib/gui/msg.py:177 engine/autoEnrolDlg.py:81
+#, python-format
+msgid "OK (%s)"
+msgstr "OK (%s)"
+
+#: applib/gui/settingsEditor.py:272 plugins/profileEditor.py:37
+#: plugins/profileEditor.py:39 plugins/profilePin.py:64
+msgid "Enter PIN"
+msgstr "PIN eingeben"
+
+#: applib/gui/settingsEditor.py:292
+msgid "Settings editor"
+msgstr "Einstellungen"
+
+#: applib/gui/usbDialog.py:52
+msgid "Please plug-in USB memory device"
+msgstr ""
+
+#: applib/gui/usbDialog.py:113
+msgid "Please select device"
+msgstr ""
+
+#: applib/gui/usbDialog.py:124 applib/gui/usbDialog.py:156
+msgid " (in use)"
+msgstr ""
+
+#: applib/gui/usbDialog.py:144
+msgid "Please select partition"
+msgstr ""
+
+#: applib/gui/usbDialog.py:181
+#, python-format
+msgid "An error occurred: %s"
+msgstr ""
+
+#: applib/utils/healthMonitor.py:312
+msgid "No network link"
+msgstr "Kein Netzwerklink"
+
+#: applib/utils/healthMonitor.py:315
+msgid "No IP address from DHCP server"
+msgstr "Keine IP Adresse vom DHCP Server"
+
+#: applib/utils/healthMonitor.py:319
+msgid "Network"
+msgstr "Netzwerk"
+
+#: applib/utils/healthMonitor.py:362
+msgid "No AC power"
+msgstr "Kein Strom"
+
+#: applib/utils/healthMonitor.py:366
+msgid "Power"
+msgstr "Strom"
+
+#: applib/utils/healthMonitor.py:424
+msgid "Disk Space"
+msgstr ""
+
+#: applib/utils/mediaDownload.py:197
+msgid "Download problems!"
+msgstr "Download Probleme!"
+
+#: applib/utils/mediaDownload.py:207
+msgid "Media Downloads"
+msgstr "Media Downloads"
+
+#: applib/utils/periodicScheduler.py:25
+#, python-format
+msgid "%d hours"
+msgstr "%d Stunden"
+
+#: applib/utils/periodicScheduler.py:28
+#, python-format
+msgid "%d minutes"
+msgstr "%d Minuten"
+
+#: applib/utils/periodicScheduler.py:30
+#, python-format
+msgid "%d seconds"
+msgstr "%d Sekunden"
+
+#: applib/utils/periodicScheduler.py:87
+msgid "Last run"
+msgstr "Letzter lauf"
+
+#: applib/utils/periodicScheduler.py:88
+msgid "Next run"
+msgstr "Nächster Lauf"
+
+#: applib/utils/periodicScheduler.py:89
+msgid "Run every"
+msgstr "Läuft jede"
+
+#: applib/utils/periodicScheduler.py:92
+msgid "Error"
+msgstr "Fehler"
+
+#: applib/utils/restartManager.py:75
+msgid "External application restart requested, restarting now..."
+msgstr "Neustart der Application wurde angefordert..."
+
+#: applib/utils/restartManager.py:214 applib/utils/restartManager.py:270
+msgid "Terminal application is restarting..."
+msgstr "Anwendung startet neu..."
+
+#: applib/utils/restartManager.py:232 applib/utils/restartManager.py:289
+msgid "Terminal is rebooting..."
+msgstr "Terminal startet neu..."
+
+#: clockserver/distrData.py:343
+msgid "Data Distribution Status"
+msgstr "Datendistribution"
+
+#: clockserver/heartbeat.py:268
+#, python-format
+msgid "Downloading %s"
+msgstr "Lade %s"
+
+#: clockserver/heartbeat.py:275 clockserver/heartbeat.py:282
+#, python-format
+msgid "Uploading %s"
+msgstr "Lade %s"
+
+#: clockserver/heartbeat.py:289 plugins/empInfo.py:118 plugins/empInfo.py:166
+#, python-format
+msgid "Action %s"
+msgstr ""
+
+#: clockserver/heartbeat.py:350 clockserver/heartbeat.py:462
+#: plugins/assistitService.py:125
+msgid "Rebooting terminal because system configuration has changed."
+msgstr "Einstellungen geändert, Terminal startet neu..."
+
+#: clockserver/heartbeat.py:352 clockserver/heartbeat.py:464
+#: plugins/assistitService.py:128
+msgid "Restarting application because settings changed"
+msgstr "Einstellungen geändert, Anwendung startet neu..."
+
+#: clockserver/heartbeat.py:492
+msgid "Heartbeat failed"
+msgstr "Heartbeat fehlgeschlagen"
+
+#: clockserver/heartbeat.py:498
+#, python-format
+msgid "Heartbeat (%s)"
+msgstr "Heartbeat (%s)"
+
+#: clockserver/heartbeat.py:500
+msgid "Heartbeat (unconfigured)"
+msgstr "Heartbeat (nicht konfiguriert)"
+
+#: clockserver/heartbeat.py:516
+msgid "Device ID"
+msgstr "Geräte ID"
+
+#: clockserver/heartbeat.py:517
+msgid "Last error message"
+msgstr "Letzte Fehlermeldung"
+
+#: clockserver/heartbeat.py:518
+msgid "Last try"
+msgstr "Letzter Versuch"
+
+#: clockserver/heartbeat.py:519
+msgid "Last error"
+msgstr "Letzter Fehler"
+
+#: clockserver/heartbeat.py:520
+msgid "Last success"
+msgstr "Letzter Erfolg"
+
+#: emps.py:679
+msgid "No employees loaded"
+msgstr "Keine Benutzer geladen"
+
+#: emps.py:683
+msgid "Employee data"
+msgstr "Benutzerdaten"
+
+#: emps.py:687
+msgid "Employees"
+msgstr "Benutzer"
+
+#: engine/autoEnrolDlg.py:27
+msgid "Please identify as supervisor"
+msgstr "Bitte als Supvervisor identifizieren"
+
+#: engine/autoEnrolDlg.py:38
+msgid "Employee is not in database, create now?"
+msgstr "Benutzer ist nicht in Datenbank, jetzt erstellen?"
+
+#: engine/autoEnrolDlg.py:45
+#, python-format
+msgid "Error creating employee (%s)"
+msgstr "Fehler beim Erstellen des Benutzers (%s)"
+
+#: engine/autoEnrolDlg.py:47
+msgid "Employee has been created."
+msgstr "Benutzer wurde erstellt."
+
+#: engine/autoEnrolDlg.py:55
+msgid "Not supervisor"
+msgstr "Nicht Supervisor."
+
+#: engine/autoEnrolDlg.py:66
+msgid ""
+"Employee is not in database!\n"
+"Call supervisor to enrol."
+msgstr ""
+"Benutzer ist nicht in Datenbank!\n"
+"Bitte Supervisor benachrichtigen um Benutzer zu registrieren."
+
+#: engine/autoEnrolDlg.py:68 plugins/supervisor.py:45
+msgid "Supervisor"
+msgstr "Supervisor"
+
+#: engine/autoEnrolDlg.py:76
+msgid "Create employee now?"
+msgstr "Benutzer jetzt erstellen?"
+
+#: engine/badge.py:25 engine/badge.py:41
+msgid "Invalid card!"
+msgstr "Ungültige Karte!"
+
+#: engine/badge.py:34 engine/badge.py:43
+msgid "Decode error!"
+msgstr "Decodierungsfehler!"
+
+#: engine/badge.py:45
+msgid "Non-numeric badge code!"
+msgstr ""
+
+#: engine/dynButtons.py:151 plugins/idleMenu.py:123
+msgid "Please identify"
+msgstr "Bitte identifizieren"
+
+#: engine/dynButtons.py:293
+msgid "Permission denied!"
+msgstr "Zugang verweigert!"
+
+#: engine/dynButtons.py:297
+msgid "Identify employee"
+msgstr "Benutzer identifizieren"
+
+#: engine/dynButtons.py:306 plugins/profileEditor.py:18
+msgid "Local supervisor not allowed."
+msgstr "Lokaler Supervisor ist nicht zugelassen."
+
+#: engine/dynButtons.py:509 engine/dynButtons.py:783
+#, python-format
+msgid "Action (%s) not defined!"
+msgstr "Aktion (%s) ist nicht definiert!"
+
+#: engine/empIdentifyDlg.py:20
+msgid "Invalid card"
+msgstr "Ungültige Karte"
+
+#: engine/empIdentifyDlg.py:28
+msgid "Wrong card!"
+msgstr "Ungültige Karte!"
+
+#: engine/empIdentifyDlg.py:54
+msgid "No employee for that badge code!"
+msgstr "Ungültige Kartennummer"
+
+#: engine/empIdentifyDlg.py:60 engine/empIdentifyDlg.py:229
+msgid "Could not identify finger!"
+msgstr "Konnte Finger nicht identifizieren!"
+
+#: engine/empIdentifyDlg.py:83
+msgid "No employee for this template!"
+msgstr "Kein Benutzer für diesen Fingerabdruck!"
+
+#: engine/empIdentifyDlg.py:108
+msgid "Wrong ID!"
+msgstr "Falsche ID!"
+
+#: engine/empIdentifyDlg.py:127
+msgid "No employee with that ID!"
+msgstr "Kein Benutzer mit dieser ID gefunden!"
+
+#: engine/empIdentifyDlg.py:163 engine/empIdentifyDlg.py:172
+msgid "Keypad"
+msgstr "Tastatur"
+
+#: engine/empVerifyDlg.py:90
+msgid "Access denied, no available verification methods!"
+msgstr "Zugang verwehrt, keine Verifikationsmethode!"
+
+#: engine/empVerifyDlg.py:109
+msgid "Always pass"
+msgstr "Immer zulassen"
+
+#: engine/empVerifyDlg.py:135
+msgid "Always deny"
+msgstr "Niemals zulassen"
+
+#: engine/empVerifyDlg.py:147
+msgid "Access denied!"
+msgstr "Zugang verwehrt!"
+
+#: engine/empVerifyDlg.py:162
+msgid "Pass if identified by badge"
+msgstr "Zulassen wenn durch Karte identifiziert"
+
+#: engine/empVerifyDlg.py:192
+msgid "Pass if identified by biometric"
+msgstr "Zulassen wenn durch Biometrieleser identifiziert"
+
+#: engine/empVerifyDlg.py:272
+msgid "Biometric (always pass)"
+msgstr "Biometrieleser (immer zulassen)"
+
+#: engine/empVerifyDlg.py:288
+msgid "PIN"
+msgstr ""
+
+#: engine/empVerifyDlg.py:298 engine/empVerifyDlg.py:514
+msgid "Please enter PIN"
+msgstr "PIN eingeben"
+
+#: engine/empVerifyDlg.py:310 engine/empVerifyDlg.py:529
+msgid "Wrong PIN!"
+msgstr "Falscher PIN!"
+
+#: engine/empVerifyDlg.py:328
+msgid "Camera Picture"
+msgstr "Foto"
+
+#: engine/empVerifyDlg.py:361
+msgid "Take picture..."
+msgstr "Photo aufnehmen..."
+
+#: engine/empVerifyDlg.py:402
+msgid "Use this picture?"
+msgstr "Photo benuzten?"
+
+#: engine/empVerifyDlg.py:404
+msgid "Re-take"
+msgstr "Erneut"
+
+#: engine/empVerifyDlg.py:438
+msgid "Voice"
+msgstr "Sprache"
+
+#: engine/empVerifyDlg.py:453
+msgid "Please say your name"
+msgstr "Bitte Namen sagen"
+
+#: engine/empVerifyDlg.py:471
+msgid "Please wait, processing data"
+msgstr "Bitte warten, verarbeite Daten"
+
+#: engine/empVerifyDlg.py:503
+msgid "User PIN"
+msgstr "Benutzer PIN"
+
+#: plugins/UsbImportExport.py:41
+msgid "Do you want to import files from USB?"
+msgstr ""
+
+#: plugins/UsbImportExport.py:52
+msgid "Please wait while importing data..."
+msgstr ""
+
+#: plugins/UsbImportExport.py:54
+#, python-format
+msgid "Error importing: %s"
+msgstr ""
+
+#: plugins/UsbImportExport.py:60 plugins/UsbImportExport.py:142
+msgid "Import completed."
+msgstr "Importieren abgeschlossen."
+
+#: plugins/UsbImportExport.py:127
+#, python-format
+msgid "Do you want to import \"%s\"?"
+msgstr "\"%s\" importieren?"
+
+#: plugins/UsbImportExport.py:130
+msgid "Importing data, please wait..."
+msgstr "Importiere Daten, bitte warten..."
+
+#: plugins/UsbImportExport.py:132
+#, python-format
+msgid "Import failed (%s)!"
+msgstr "Importieren fehlgeschlagen (%s)!"
+
+#: plugins/UsbImportExport.py:134
+msgid ""
+"Import completed. A terminal restart is required. Do you want to restart "
+"terminal now?"
+msgstr ""
+"Importieren abgeschlossen. Ein Neustart ist erforderlich. Jetzt ausführen?"
+
+#: plugins/UsbImportExport.py:138
+msgid ""
+"Import completed. An application restart is required. Do you want to restart "
+"application now?"
+msgstr ""
+
+#: plugins/UsbImportExport.py:166
+msgid "Export directory already exists, replace files with this export?"
+msgstr "Export-Verzeichnis existiert bereits, überschreiben?"
+
+#: plugins/UsbImportExport.py:169
+msgid "Exporting data to USB..."
+msgstr "Exportiere Daten auf USB..."
+
+#: plugins/UsbImportExport.py:173
+msgid "Data was successfully exported to USB."
+msgstr "Daten wurden erfolgreich auf USB exportiert."
+
+#: plugins/UsbImportExport.py:175
+#, python-format
+msgid "Failed to export data (%s)."
+msgstr "Exportieren der Daten fehlgeschlagen (%s)."
+
+#: plugins/UsbImportExport.py:225
+msgid "Import"
+msgstr "Importieren"
+
+#: plugins/UsbImportExport.py:303
+msgid "Export"
+msgstr "Exportieren"
+
+#: plugins/assistit.py:16
+msgid "Turn on remote support?"
+msgstr "Fernhilfe aktivieren?"
+
+#: plugins/assistit.py:37
+msgid "Testing connection to AssistIT..."
+msgstr "Teste Verbindung zu AssistIT..."
+
+#: plugins/assistit.py:49
+msgid "AssistIT connected successfully."
+msgstr "Verbindungstest zu AssistIT war erfolgreich."
+
+#: plugins/assistit.py:53
+#, python-format
+msgid "AssistIT failed to connect (%s)"
+msgstr "Konnte nicht zu AssistIT verbinden (%s)"
+
+#: plugins/assistit.py:61
+msgid "Enter support reference"
+msgstr "Support-Referenz eingeben"
+
+#: plugins/assistit.py:83
+msgid "Turning on AssistIT..."
+msgstr "Aktiviere AssistIT..."
+
+#: plugins/assistit.py:95
+msgid "Remote support has been enabled"
+msgstr "Fernhilfe wurde aktiviert"
+
+#: plugins/assistit.py:105
+msgid "Assistance"
+msgstr "Fernhilfe"
+
+#: plugins/assistit.py:132
+msgid "Test AssistIT"
+msgstr "AssistIT testen"
+
+#: plugins/ceTestLink.py:13
+msgid "Testing connection, please wait..."
+msgstr "Überprüfe Verbindung, bitte warten..."
+
+#: plugins/ceTestLink.py:15
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: plugins/ceTestLink.py:17
+msgid "Success"
+msgstr "Erfolg"
+
+#: plugins/ceTestLink.py:28
+msgid "Test link"
+msgstr "Verbindungstest"
+
+#: plugins/clockings/__init__.py:494
+msgid "Last Clockings"
+msgstr "Letzte Buchungen"
+
+#: plugins/clockings/__init__.py:500
+msgid "Last clockings on this terminal"
+msgstr "Letzte Buchungen am Terminal"
+
+#: plugins/clockings/__init__.py:554
+msgid "Review"
+msgstr "Review"
+
+#: plugins/clockings/clearClockings.py:16
+#: plugins/clockings/resendClockings.py:16
+msgid "Clockings"
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:46
+#: plugins/clockings/resendClockings.py:46
+msgid "Oldest sent"
+msgstr "Älteste gesendet"
+
+#: plugins/clockings/clearClockings.py:47
+#: plugins/clockings/resendClockings.py:47
+msgid "Last sent"
+msgstr "Letzte gesendet"
+
+#: plugins/clockings/clearClockings.py:48
+#: plugins/clockings/resendClockings.py:48
+msgid "Oldest unsent"
+msgstr "Älteste nicht gesendet"
+
+#: plugins/clockings/clearClockings.py:49
+#: plugins/clockings/resendClockings.py:49
+msgid "Last unsent"
+msgstr "Letzte nicht gesendet"
+
+#: plugins/clockings/clearClockings.py:52
+msgid "Clear transactions"
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:54
+msgid "No unsent transactions"
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:63
+#: plugins/clockings/clearClockings.py:134
+#: plugins/clockings/clearClockings.py:177
+#: plugins/clockings/resendClockings.py:63
+#: plugins/clockings/resendClockings.py:134
+#: plugins/clockings/resendClockings.py:177
+msgid "Collecting data..."
+msgstr "Daten werden vorbereitet..."
+
+#: plugins/clockings/clearClockings.py:92
+msgid ""
+"Please enter date and time up to and including which all unsent transactions "
+"will be marked as sent."
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:102
+#: plugins/clockings/resendClockings.py:102
+msgid "Enter date"
+msgstr "Datum eingeben"
+
+#: plugins/clockings/clearClockings.py:116
+#: plugins/clockings/resendClockings.py:116
+msgid "Enter Time"
+msgstr "Zeit eingeben"
+
+#: plugins/clockings/clearClockings.py:138
+#, python-format
+msgid "No unsent transactions up to and including %s."
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:143
+#, python-format
+msgid ""
+"Mark transactions up to and including %(date)s (%(numTrans)s transactions) "
+"as sent?"
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:158
+#, python-format
+msgid "Marking %d transactions as sent..."
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:168
+#, python-format
+msgid "%s transactions have been marked as sent."
+msgstr ""
+
+#: plugins/clockings/clearClockings.py:189
+msgid "Clear Clockings"
+msgstr ""
+
+#: plugins/clockings/clockingDialog.py:53
+msgid "Clocking configuration error!"
+msgstr "Buching fehlerhalt konfiguriert!"
+
+#: plugins/clockings/clockingDialog.py:67
+#, python-format
+msgid "Clocking error: %s"
+msgstr "Fehler beim Buchen: %s"
+
+#: plugins/clockings/clockingDialog.py:100
+msgid "Contacting server"
+msgstr ""
+
+#: plugins/clockings/clockingDialog.py:131 plugins/dataCollection.py:588
+#: plugins/holidays.py:104 plugins/scheduleOverride.py:68
+#: plugins/timecards.py:142 plugins/tips.py:120 plugins/transfer.py:78
+msgid "Transaction buffer full!"
+msgstr "Transaktionsbuffer voll!"
+
+#: plugins/clockings/clockingDialog.py:165
+#, python-format
+msgid "Already clocked within last %s seconds."
+msgstr "Bereits gebucht innerhalb der letzten %s Sekunden."
+
+#: plugins/clockings/lastClockingsDialog.py:62
+msgid "Review photo..."
+msgstr "Foto überprüfen..."
+
+#: plugins/clockings/lastClockingsDialog.py:79
+msgid "Review voice..."
+msgstr "Sprache überprüfen..."
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:110
+#: plugins/clockings/punchRestrictionsWizardDialog.py:314
+#: plugins/clockings/punchRestrictionsWizardDialog.py:368
+msgid "Server not available. Please try again later"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:179
+msgid "Are you ending your shift?"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:180
+msgid "YES"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:181
+msgid "NO"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:209
+msgid "No active online schedule found"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:210
+#: plugins/clockings/punchRestrictionsWizardDialog.py:337
+#: plugins/diagnostics.py:29 plugins/traceRoute.py:18
+msgid "Exit"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:302
+msgid "Health Attest failed"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:322
+msgid "Checking Schedules. Please wait"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:336
+msgid "No active offline schedule found"
+msgstr ""
+
+#: plugins/clockings/punchRestrictionsWizardDialog.py:382
+msgid "Questionnaire: Not yet implemented"
+msgstr ""
+
+#: plugins/clockings/resendClockings.py:52
+msgid "Re-send transactions"
+msgstr "Transaktionen erneut senden"
+
+#: plugins/clockings/resendClockings.py:54
+msgid "No transactions to re-send"
+msgstr ""
+
+#: plugins/clockings/resendClockings.py:92
+msgid ""
+"Please enter date and time from which all sent transactions will be marked "
+"as unsent."
+msgstr ""
+"Bitte geben Sie Tag und Zeit an, ab wann Transaktionen als nicht gesendet "
+"markiert werden sollen."
+
+#: plugins/clockings/resendClockings.py:138
+#, python-format
+msgid "No sent transactions after %s."
+msgstr "Keine Transaktionen nach dem %s."
+
+#: plugins/clockings/resendClockings.py:143
+#, python-format
+msgid "Mark transactions after %(date)s (%(numTrans)s transactions) as unsent?"
+msgstr ""
+"%(numTrans)s Transaktionen nach dem %(date)s als noch nicht gesendet "
+"markieren?"
+
+#: plugins/clockings/resendClockings.py:158
+#, python-format
+msgid "Marking %d transactions as unsent..."
+msgstr "Markiere %d Transaktionen als noch nicht gesendet..."
+
+#: plugins/clockings/resendClockings.py:168
+#, python-format
+msgid ""
+"%s transactions have been marked as unsent and will be re-sent from within "
+"the application."
+msgstr ""
+"%s Transaktionen wurden als nicht gesendet markiert und werden in der "
+"Applikation erneut versendet."
+
+#: plugins/clockings/resendClockings.py:189
+msgid "Resend Clockings"
+msgstr ""
+
+#: plugins/consent/__init__.py:14
+msgid "Manage Consent"
+msgstr ""
+
+#: plugins/consent/consentDialog.py:33 plugins/consent/consentDialog.py:43
+msgid "Decline"
+msgstr ""
+
+#: plugins/consent/consentDialog.py:35
+#, python-format
+msgid "Skip (%s)"
+msgstr ""
+
+#: plugins/consent/consentDialog.py:38 plugins/diagnostics.py:45
+msgid "Ok"
+msgstr ""
+
+#: plugins/consent/consentDialog.py:40
+#, python-format
+msgid "Ok (%s)"
+msgstr ""
+
+#: plugins/consent/consentDialog.py:46
+#, python-format
+msgid "Cancel (%s)"
+msgstr "Abbrechen (%s)"
+
+#: plugins/consent/consentDialog.py:74
+msgid "This will delete all your templates"
+msgstr ""
+
+#: plugins/consent/consentManagement.py:22
+msgid "Renew"
+msgstr ""
+
+#: plugins/dataCollection.py:166
+msgid "Accepted"
+msgstr ""
+
+#: plugins/dataCollection.py:235 plugins/dataCollection.py:365
+msgid "Please select"
+msgstr ""
+
+#: plugins/dataCollection.py:579
+#, python-format
+msgid "Failed to send transaction: %s"
+msgstr ""
+
+#: plugins/dataCollection.py:877 plugins/dataCollection.py:892
+msgid "Please enter a numeric value."
+msgstr ""
+
+#: plugins/dataCollection.py:885
+#, python-format
+msgid "The minimum value allowed is %s."
+msgstr ""
+
+#: plugins/dataCollection.py:889
+#, python-format
+msgid "The maximum value allowed is %s."
+msgstr ""
+
+#: plugins/dataCollection.py:926
+#, python-format
+msgid "Please enter at least %s characters."
+msgstr ""
+
+#: plugins/dataCollection.py:930
+#, python-format
+msgid "Please enter no more than %s characters."
+msgstr ""
+
+#: plugins/dataCollection.py:1263
+msgid "Data Collection"
+msgstr ""
+
+#: plugins/diagnostics.py:27 plugins/diagnostics.py:31
+#: plugins/diagnostics.py:202
+msgid "Diagnostics"
+msgstr ""
+
+#: plugins/diagnostics.py:28 plugins/diagnostics.py:32
+#: plugins/internalTestAction.py:642
+msgid "Run Tests"
+msgstr ""
+
+#: plugins/diagnostics.py:49
+msgid "Checking Web-Client Registration. Please wait."
+msgstr ""
+
+#: plugins/diagnostics.py:50
+msgid "Checking Web-Client Sync Changes. Please wait."
+msgstr ""
+
+#: plugins/diagnostics.py:51
+msgid "Checking Name Server. Please wait."
+msgstr ""
+
+#: plugins/diagnostics.py:52
+msgid "Checking Custom Exchange. Please wait."
+msgstr ""
+
+#: plugins/empInfo.py:25
+msgid "Action not available at this time. Please try again later."
+msgstr ""
+
+#: plugins/empInfo.py:30 webClient/webWizard.py:150
+msgid "Contacting server, please wait..."
+msgstr ""
+
+#: plugins/empInfo.py:34 plugins/empInfo.py:41
+msgid ""
+"Action not available.\n"
+" Please try again later"
+msgstr ""
+
+#: plugins/empInfo.py:39
+msgid "Server returned an error!\n"
+msgstr ""
+
+#: plugins/empInfo.py:56
+msgid ""
+"Feature not available.\n"
+" Please try again later"
+msgstr ""
+
+#: plugins/empInfo.py:78
+#, python-format
+msgid "Information type not supported (%s)!"
+msgstr ""
+
+#: plugins/empOptions.py:46
+msgid "<b>Messages:</b>"
+msgstr "<b>Nachrichten:</b>"
+
+#: plugins/empOptions.py:57
+#, python-format
+msgid "Error: %s"
+msgstr "Fehler: %s"
+
+#: plugins/empOptions.py:60
+msgid "<i>Loading...</i>\n"
+msgstr "<i>Wird geladen...</i>\n"
+
+#: plugins/empOptions.py:71
+msgid "<b>Last clockings on this terminal:</b>"
+msgstr "<b>Letzte Buchungen an diesem Terminal:</b>"
+
+#: plugins/empOptions.py:100
+msgid "Options"
+msgstr "Optionen"
+
+#: plugins/health.py:14
+msgid "Exiting application, please wait..."
+msgstr "Beende Anwendung, bitte warten..."
+
+#: plugins/health.py:21
+msgid "Restart application and run wizard?"
+msgstr ""
+
+#: plugins/health.py:25
+msgid "Restarting application wizard, please wait..."
+msgstr ""
+
+#: plugins/health.py:35
+msgid "Health"
+msgstr "Status"
+
+#: plugins/health.py:62
+msgid "Exit App"
+msgstr "App beenden"
+
+#: plugins/health.py:93
+msgid "Restart wizard"
+msgstr ""
+
+#: plugins/holidays.py:38
+msgid "Select holiday start date"
+msgstr "Urlaubsbeginn wählen"
+
+#: plugins/holidays.py:47 plugins/tips.py:57
+msgid "Please select a date in the future!"
+msgstr "Urlaubsbeginn muss in der Zukunft liegen!"
+
+#: plugins/holidays.py:57
+msgid "Enter number of days"
+msgstr "Anzahl der Tage wählen"
+
+#: plugins/holidays.py:71
+#, python-format
+msgid "Number of days entered must be in the range 1.. %d!"
+msgstr ""
+
+#: plugins/holidays.py:93
+#, python-format
+msgid "Book %(days)s days holiday starting on %(date)s?"
+msgstr "%(days)s Tage Urlaub beginnend am %(date)s buchen?"
+
+#: plugins/holidays.py:112
+#, python-format
+msgid "Error booking holiday. %s"
+msgstr "Fehler beim Buchen des Urlaubs. %s"
+
+#: plugins/holidays.py:114
+msgid "Your holiday has been booked."
+msgstr "Urlaub wurde gebucht."
+
+#: plugins/holidays.py:127
+msgid "Holiday"
+msgstr "Urlaub"
+
+#: plugins/idleMenu.py:48 plugins/idleMenu.py:51
+msgid "Please select option or present card."
+msgstr "Bitte Option wählen oder Karte vorhalten."
+
+#: plugins/idleMenu.py:54
+msgid "Please present card or enter ID."
+msgstr "Bitte Karte vorhalten oder ID eingeben."
+
+#: plugins/idleMenu.py:155 plugins/idleMenu.py:200 plugins/idleMenu.py:243
+#: plugins/idleMenu.py:576
+msgid "Out of disk space"
+msgstr ""
+
+#: plugins/idleMenu.py:157 plugins/idleMenu.py:202 plugins/idleMenu.py:245
+#: plugins/idleMenu.py:578
+msgid "Contact support"
+msgstr ""
+
+#: plugins/idleMenu.py:566
+msgid "Good morning"
+msgstr ""
+
+#: plugins/idleMenu.py:568
+msgid "Good afternoon"
+msgstr ""
+
+#: plugins/idleMenu.py:570
+msgid "Good evening"
+msgstr ""
+
+#: plugins/ntpTest.py:26
+msgid "Text View"
+msgstr ""
+
+#: plugins/ntpTest.py:30
+msgid "Running NTP Test. Please wait"
+msgstr ""
+
+#: plugins/ntpTest.py:53
+msgid "NTP Test"
+msgstr ""
+
+#: plugins/profileBadge.py:17
+msgid "Please enter new Badge"
+msgstr ""
+
+#: plugins/profileBadge.py:23
+msgid "User BadgeCodes are not supported."
+msgstr ""
+
+#: plugins/profileBadge.py:32
+msgid "Unset badgecode?"
+msgstr ""
+
+#: plugins/profileBadge.py:34 plugins/profileBadge.py:37
+msgid "Setting BadgeCode, please wait..."
+msgstr ""
+
+#: plugins/profileBadge.py:63
+#, python-format
+msgid "Badgecode already registered, against %s"
+msgstr ""
+
+#: plugins/profileBadge.py:73
+msgid "Enter BadgeCode"
+msgstr ""
+
+#: plugins/profileEditor.py:31
+msgid "Set Verification Order"
+msgstr "Verifikationsreihenfolge"
+
+#: plugins/profileEditor.py:34 plugins/testBio.py:292
+msgid "Enrol Finger"
+msgstr "Fingerabdruck registrieren"
+
+#: plugins/profileEditor.py:42
+msgid "Change Photo"
+msgstr "Foto ändern"
+
+#: plugins/profileEditor.py:45
+msgid "Change BadgeCode"
+msgstr ""
+
+#: plugins/profileEditor.py:48
+msgid "Change Name"
+msgstr "Name ändern"
+
+#: plugins/profileEditor.py:51
+msgid "Change Language"
+msgstr "Sprache ändern"
+
+#: plugins/profileEditor.py:54
+msgid "Change Roles"
+msgstr "Rollen ändern"
+
+#: plugins/profileEditor.py:56
+msgid "View Details"
+msgstr "Details ansehen"
+
+#: plugins/profileEditor.py:59 plugins/profileEditor.py:263
+msgid "Delete Profile"
+msgstr "Profil löschen"
+
+#: plugins/profileEditor.py:113
+msgid "Name"
+msgstr "Name"
+
+#: plugins/profileEditor.py:114
+msgid "Languages"
+msgstr "Sprachen"
+
+#: plugins/profileEditor.py:115
+msgid "Roles"
+msgstr "Rollen"
+
+#: plugins/profileEditor.py:116
+msgid "Verification Methods"
+msgstr "Verifikationsmethoden"
+
+#: plugins/profileEditor.py:117
+msgid "Employee ID"
+msgstr "Benutzer ID"
+
+#: plugins/profileEditor.py:118
+msgid "BadgeCode"
+msgstr "Kartennummer"
+
+#: plugins/profileEditor.py:119
+msgid "Keypad ID"
+msgstr "Tastatur ID"
+
+#: plugins/profileEditor.py:121
+msgid "Profile Data ID"
+msgstr "Profildaten ID"
+
+#: plugins/profileEditor.py:123
+msgid "Templates enrolled"
+msgstr "Registrierte Fingerabdrücke"
+
+#: plugins/profileEditor.py:145
+msgid "Delete profile?"
+msgstr "Profil löschen?"
+
+#: plugins/profileEditor.py:148
+msgid "Deleting profile..."
+msgstr "Lösche Profil..."
+
+#: plugins/profileEditor.py:168
+msgid "Profile Info"
+msgstr "Profil-Info"
+
+#: plugins/profileEditor.py:216
+msgid "Profiles"
+msgstr "Profile"
+
+#: plugins/profileLanguage.py:22
+msgid "Use system language"
+msgstr "Benutze System-Sprache"
+
+#: plugins/profileLanguage.py:29
+msgid "User languages are not supported."
+msgstr "Benutzer-Sprachen werden nicht unterstützt."
+
+#: plugins/profileLanguage.py:36
+msgid "Setting language, please wait..."
+msgstr "Sprache wird gespeichert, bitte warten..."
+
+#: plugins/profileLanguage.py:54
+msgid "Language"
+msgstr "Sprache"
+
+#: plugins/profilePicture.py:21 plugins/profilePicture.py:183
+msgid "Profile Photo"
+msgstr "Profilfoto"
+
+#: plugins/profilePicture.py:23
+msgid "Change"
+msgstr "Ändern"
+
+#: plugins/profilePicture.py:29 plugins/profilePicture.py:66
+msgid "Profile pictures are not supported."
+msgstr "Profilphotos werden nicht unterstützt."
+
+#: plugins/profilePicture.py:55
+msgid "Viewing the profile picture is not supported on this terminal."
+msgstr "Ein Profilfoto kann auf diesem Terminal nicht angezeigt werden."
+
+#: plugins/profilePicture.py:62
+#, python-format
+msgid "%s has no profile photo."
+msgstr "%s hat kein Profilfoto"
+
+#: plugins/profilePicture.py:88
+msgid "Taking profile pictures is not supported."
+msgstr "Aufnehmen von Profilphotos ist nicht unterstützt."
+
+#: plugins/profilePicture.py:92
+msgid "Take photo..."
+msgstr "Foto aufnehmen"
+
+#: plugins/profilePicture.py:97
+msgid "Taking a photo is not supported on this terminal."
+msgstr "Ein Profilfoto kann auf diesem Terminal nicht aufgenommen werden."
+
+#: plugins/profilePicture.py:124
+msgid "Use this photo?"
+msgstr "Foto benutzen?"
+
+#: plugins/profilePicture.py:132
+msgid "Saving profile picture"
+msgstr "Profilfoto wird gespeichert"
+
+#: plugins/profilePicture.py:134
+#, python-format
+msgid "Unable to save photo. %s"
+msgstr "Foto konnte nicht gespeichert werden. %s"
+
+#: plugins/profilePicture.py:136
+msgid "Profile picture saved."
+msgstr "Profilphoto gespeichert."
+
+#: plugins/profilePicture.py:155
+msgid "Deleting profile pictures is not supported."
+msgstr "Löschen von Profilphotos ist nicht unterstützt."
+
+#: plugins/profilePicture.py:157
+msgid "Delete photo?"
+msgstr "Profilfoto löschen?"
+
+#: plugins/profilePicture.py:159
+msgid "Deleting photo..."
+msgstr "Profilfoto wird gelöscht..."
+
+#: plugins/profilePicture.py:161
+#, python-format
+msgid "Unable to delete photo. %s"
+msgstr "Foto konnte nicht gelöscht werden. %s"
+
+#: plugins/profilePicture.py:230
+msgid "View Photo"
+msgstr "Foto ansehen"
+
+#: plugins/profilePicture.py:267
+msgid "Take Photo"
+msgstr "Profilfoto aufnehmen"
+
+#: plugins/profilePicture.py:306
+msgid "Delete Photo"
+msgstr "Foto löschen"
+
+#: plugins/profilePin.py:16
+msgid "Please enter new PIN"
+msgstr "Bitte neue PIN eingeben"
+
+#: plugins/profilePin.py:21
+msgid "User PINs are not supported."
+msgstr "Benutzer PINs werden nicht unterstützt."
+
+#: plugins/profilePin.py:30
+msgid "Unset password?"
+msgstr "Passwort zurücksetzen?"
+
+#: plugins/profilePin.py:32 plugins/profilePin.py:45
+msgid "Setting PIN, please wait..."
+msgstr "Bitte warten..."
+
+#: plugins/profilePin.py:35
+msgid "Please confirm PIN"
+msgstr "Bitte PIN bestätigen"
+
+#: plugins/profilePin.py:42
+msgid "The PINs you entered are not the same!"
+msgstr "Die eingegebenen PINs sind unterschiedlich!"
+
+#: plugins/profileTemplates.py:18
+msgid "Info"
+msgstr "Info"
+
+#: plugins/profileTemplates.py:24 plugins/profileTemplates.py:48
+msgid "Biometric templates are not supported."
+msgstr "Biometrische Fingerabdrücke werden nicht unterstützt."
+
+#: plugins/profileTemplates.py:46
+#, python-format
+msgid "Templates enrolled: %d"
+msgstr "Fingerabdrücke registriert: %d"
+
+#: plugins/profileTemplates.py:66
+msgid "Templates"
+msgstr "Fingerabdrücke"
+
+#: plugins/profileTemplates.py:107
+msgid "Template info"
+msgstr "Fingerabdruck-Info"
+
+#: plugins/profileTemplates.py:142
+msgid "Enrol templates"
+msgstr "Fingerabdrücke registrieren"
+
+#: plugins/profileVerifyMethod.py:18
+msgid "Select Method"
+msgstr "Methode auswählen"
+
+#: plugins/profileVerifyMethod.py:25
+msgid "Use system order"
+msgstr "Systemreihenfolge verwenden"
+
+#: plugins/profileVerifyMethod.py:32
+msgid "User verification methods are not supported."
+msgstr "Benutzer Verifizierungsmethoden werden nicht unterstützt."
+
+#: plugins/profileVerifyMethod.py:41 plugins/profileVerifyMethod.py:44
+msgid "Setting verification method, please wait..."
+msgstr "Verifizierungsmethode wird eingestellt, bitte warten..."
+
+#: plugins/profileVerifyMethod.py:61
+msgid "Verification Method"
+msgstr "Verifizierungsmethode"
+
+#: plugins/relays/__init__.py:20
+msgid "Relay Schedules"
+msgstr "Relay-Plan"
+
+#: plugins/relays/relaySchedulesEditor.py:92
+msgid "Configure relay schedules"
+msgstr "Konfiguriere Relay-Ablaufplan"
+
+#: plugins/relays/relaySchedulesEditor.py:101
+#: plugins/relays/relaySchedulesEditor.py:120
+msgid "Configure relay times"
+msgstr "Konfiguriere Relay-Zeiten"
+
+#: plugins/relays/relaySchedulesEditor.py:102
+#: plugins/relays/relaySchedulesEditor.py:175
+msgid "Configure override periods"
+msgstr "Konfiguriere Ausnahmen"
+
+#: plugins/relays/relaySchedulesEditor.py:127
+msgid "Add relay time"
+msgstr "Relay-Zeit hinzufügen"
+
+#: plugins/relays/relaySchedulesEditor.py:155
+#: plugins/relays/relaySchedulesEditor.py:326
+#, python-format
+msgid "IO board %(board)s relay %(relay)s"
+msgstr "IO Module %(board)s Relay %(relay)s"
+
+#: plugins/relays/relaySchedulesEditor.py:182
+msgid "Add override period"
+msgstr "Ausnahme hinzufügen"
+
+#: plugins/relays/relaySchedulesEditor.py:205
+#, python-format
+msgid ""
+"Override period\n"
+"%(startDate)s to %(endDate)s"
+msgstr ""
+"Ausnahme\n"
+"von %(startDate)s bis %(endDate)s"
+
+#: plugins/relays/relaySchedulesEditor.py:249
+msgid "Enter relay on time"
+msgstr "Aktivierungszeit eingeben"
+
+#: plugins/relays/relaySchedulesEditor.py:267
+msgid "Enter relay off time"
+msgstr "Deaktivierungszeit eingeben"
+
+#: plugins/relays/relaySchedulesEditor.py:288
+msgid "Select the day(s) of week"
+msgstr "Wochentage auswählen"
+
+#: plugins/relays/relaySchedulesEditor.py:305
+msgid "No day selected."
+msgstr "Kein Tag ausgewählt."
+
+#: plugins/relays/relaySchedulesEditor.py:318
+msgid "Select the relay to control"
+msgstr "Relay auswählen"
+
+#: plugins/relays/relaySchedulesEditor.py:346
+#, python-format
+msgid "Switch relay %(relay)s on %(days)s from %(startTime)s to %(endTime)s?"
+msgstr ""
+"Relay %(relay)s am %(days)s von %(startTime)s bis %(endTime)s aktivieren?"
+
+#: plugins/relays/relaySchedulesEditor.py:387
+msgid "Enter start date MM/DD"
+msgstr "Startdatum eingeben (MM/DD)"
+
+#: plugins/relays/relaySchedulesEditor.py:405
+msgid "Enter end date MM/DD"
+msgstr "Enddatum eingeben (MM/DD)"
+
+#: plugins/relays/relaySchedulesEditor.py:424
+#, python-format
+msgid ""
+"Override the relay times on\n"
+"%(startDate)s to %(endDate)s?"
+msgstr "Relay-Zeiten vom %(startDate)s bis %(endDate)s überschreiben?"
+
+#: plugins/scheduleOverride.py:27
+#, python-brace-format
+msgid ""
+"Lift restriction on next punch for {employee}?\n"
+"\n"
+"If the user does not punch, the restriction will automatically expire on "
+"{expiryTime}."
+msgstr ""
+
+#: plugins/scheduleOverride.py:88
+msgid "Override Schedule"
+msgstr ""
+
+#: plugins/settings.py:17
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: plugins/testBio.py:57
+msgid "At least one finger must be enrolled!"
+msgstr ""
+
+#: plugins/testBio.py:113
+msgid "Test Bio"
+msgstr ""
+
+#: plugins/testBio.py:258
+msgid "Value must be between 1 and 9999"
+msgstr ""
+
+#: plugins/testBio.py:260
+msgid "Please Enrol a template!"
+msgstr ""
+
+#: plugins/timecards.py:46 plugins/timecards.py:131
+msgid "Retrieving Timecards. Please wait"
+msgstr ""
+
+#: plugins/timecards.py:148
+msgid "Your Timecard Catchup has been confirmed."
+msgstr ""
+
+#: plugins/timecards.py:151
+#, python-format
+msgid "Error confirming Timecard Catchup. %s"
+msgstr ""
+
+#: plugins/timecards.py:196
+msgid "Continue"
+msgstr ""
+
+#: plugins/timecards.py:251
+msgid "Confirm Selection"
+msgstr ""
+
+#: plugins/timecards.py:286
+msgid "Timecard Catchup"
+msgstr ""
+
+#: plugins/tips.py:48
+msgid "Select Tip date"
+msgstr ""
+
+#: plugins/tips.py:68
+msgid "Enter tip amount"
+msgstr ""
+
+#: plugins/tips.py:83
+#, python-format
+msgid "Tip amount entered must be in the range 1.. %d!"
+msgstr ""
+
+#: plugins/tips.py:106
+#, python-format
+msgid "Tip %(amount)s on %(date)s?"
+msgstr ""
+
+#: plugins/tips.py:109
+#, python-format
+msgid "Tip %(amount)s"
+msgstr ""
+
+#: plugins/tips.py:131
+#, python-format
+msgid "Error sending tip. %s"
+msgstr ""
+
+#: plugins/tips.py:133
+msgid "Your Tip has been accepted."
+msgstr ""
+
+#: plugins/tips.py:147
+msgid "Tips"
+msgstr ""
+
+#: plugins/traceRoute.py:34 plugins/traceRoute.py:42
+msgid "Running TraceRoute. Please wait"
+msgstr ""
+
+#: plugins/traceRoute.py:85 plugins/traceRoute.py:100
+msgid "TraceRoute"
+msgstr ""
+
+#: plugins/transfer.py:52
+msgid "No Job Categories found"
+msgstr ""
+
+#: plugins/transfer.py:83
+#, python-format
+msgid "Error confirming Transfer. %s"
+msgstr ""
+
+#: plugins/transfer.py:85
+msgid "Your Transfer has been confirmed."
+msgstr ""
+
+#: plugins/transfer.py:126
+#, python-format
+msgid "Transfer %s"
+msgstr ""
+
+#: plugins/transfer.py:187
+msgid "Transfer Confirm"
+msgstr ""
+
+#: plugins/transfer.py:197
+msgid "Confirm"
+msgstr ""
+
+#: plugins/transfer.py:215
+msgid "Transfer"
+msgstr ""
+
+#: plugins/viewSchedules.py:15 plugins/viewSchedules.py:41
+msgid "View Schedules"
+msgstr ""
+
+#: plugins/viewSchedules.py:21
+msgid "Date"
+msgstr ""
+
+#: plugins/viewSchedules.py:21
+msgid "Start - End"
+msgstr ""
+
+#: webClient/employeeUpdates.py:45
+msgid "Employee Updates Status"
+msgstr ""
+
+#: webClient/syncChanges.py:68
+msgid "Installing new firmware"
+msgstr ""
+
+#: webClient/syncChanges.py:72
+msgid "Installing new application"
+msgstr ""
+
+#: webClient/syncChanges.py:78
+msgid "Loading itcfg"
+msgstr ""
+
+#: webClient/syncChanges.py:82
+msgid "Loading buttons"
+msgstr ""
+
+#: webClient/syncChanges.py:86
+msgid "Loading certificates"
+msgstr ""
+
+#: webClient/syncChanges.py:90
+msgid "Loading data collection definitions"
+msgstr ""
+
+#: webClient/syncChanges.py:100
+msgid "Loading employees"
+msgstr ""
+
+#: webClient/syncChanges.py:105
+msgid "Loading employee info"
+msgstr ""
+
+#: webClient/syncChanges.py:109
+msgid "Loading Schedules"
+msgstr ""
+
+#: webClient/syncChanges.py:114
+msgid "Loading Job Codes"
+msgstr ""
+
+#: webClient/syncChanges.py:119
+msgid "Loading Job Categories"
+msgstr ""
+
+#: webClient/webWizard.py:46
+msgid "Server IP address"
+msgstr ""
+
+#: webClient/webWizard.py:50
+msgid "Hostname"
+msgstr ""
+
+#: webClient/webWizard.py:64
+msgid "Server hostname"
+msgstr ""
+
+#: webClient/webWizard.py:68
+msgid "IP Address"
+msgstr ""
+
+#: webClient/webWizard.py:82
+msgid "Please enter a valid hostname or IP address."
+msgstr ""
+
+#: webClient/webWizard.py:99
+msgid "Failed to register with web service!"
+msgstr ""
+
+#: webClient/webWizard.py:139
+msgid "Registration not available at this time. Please try again later."
+msgstr ""
+
+#: webClient/webWizard.py:152
+msgid "Registration was cancelled."
+msgstr ""
+
+#: webClient/webWizard.py:154
+msgid "Registration timed out."
+msgstr ""
+
+#: webClient/webWizard.py:162
+msgid "Device is registered."
+msgstr ""
+
+#: webClient/webWizard.py:165
+#, python-format
+msgid "Registration failed: %s"
+msgstr ""
+
+#: webClient/webWizard.py:167
+msgid "Registration failed!"
+msgstr ""

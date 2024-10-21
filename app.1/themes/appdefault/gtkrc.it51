@@ -1,0 +1,799 @@
+
+style "default"
+{
+  font_name      = "Arial 21"
+  fg[NORMAL]     = "#000000"
+  base[ACTIVE]   = "#657f96"
+  base[SELECTED] = "#657f96"
+  base[NORMAL]   = "#FFFFFF"
+
+  xthickness =  0
+  ythickness =  0
+
+  engine "themeit" 
+  {
+  }
+}
+
+style "default-gtk"
+{
+  engine ""
+  {
+  }
+}
+
+style "window"
+{
+  xthickness = 20
+  ythickness = 20
+  
+  engine "themeit"
+  {
+    bg_pixmap = "images/background.png"
+  }
+}
+
+style "waitbox-window"
+{
+  xthickness = 20
+  ythickness = 20
+  
+  engine "themeit"
+  {
+    bg_pixmap = none
+    image 
+    {
+      function  = FLAT_BOX
+      file      = "images/background.png"
+      border    = { 0,0,0,0 }
+    }
+  }  
+}
+
+style "title"
+{
+  xthickness = 16
+  ythickness = 16
+  
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "title-text"
+{
+  font_name  = "Arial Bold 25"
+}
+
+style "button"
+{
+  xthickness = 8
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function = BOX
+      state    = ACTIVE
+      file     = "images/button-down.png"
+      border   = { 16, 16, 16, 16 }
+    }
+    image 
+    {
+      function = BOX
+      file     = "images/button-normal.png"
+      border   = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "up-button"
+{
+  xthickness = 8
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = { 14, 14, 14,  0 }
+      clipping  = {  0,  0,  0, 14 }
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 14, 14, 14,  0 }
+      clipping  = {  0,  0,  0, 14 }
+    }
+  }
+}
+
+style "gridmenu-button" = "button"
+{
+  xthickness = 40
+}
+
+style "gridbutton" = "button"
+{
+  xthickness = 20
+}
+
+style "down-button"
+{
+  xthickness = 8
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = { 14, 14,  0, 14 }
+      clipping  = {  0,  0, 14,  0 }      
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 14, 14,  0, 14 }
+      clipping  = {  0,  0, 14,  0 }      
+    }
+  }
+}
+
+style "left-button"
+{
+  xthickness = 4
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = { 14,  0, 14, 14 }
+      clipping  = {  0, 14,  0,  0 }      
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 14,  0, 14, 14 }
+      clipping  = {  0, 14,  0,  0 }      
+    }
+  }
+}
+
+style "right-button"
+{
+  xthickness = 4
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = {  0, 14, 14, 14 }
+      clipping  = { 14,  0,  0,  0 }      
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = {  0, 14, 14, 14 }
+      clipping  = { 14,  0,  0,  0 }      
+    }
+  }
+}
+
+style "hmiddle-button"
+{
+  xthickness = 4
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = {  0,  0, 14, 14 }
+      clipping  = { 14, 14,  0,  0 }
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = {  0,  0, 14, 14 }
+      clipping  = { 14, 14,  0,  0 }
+    }
+  }
+}
+
+style "mini-numpad-button"
+{
+  xthickness = 2
+  ythickness = 2
+
+  engine "themeit"
+  {
+    image
+    {
+      function = BOX
+      state    = ACTIVE
+      file     = "images/button-down.png"
+      border   = { 16, 16, 16, 16 }
+    }
+    image 
+    {
+      function = BOX
+      file     = "images/button-normal.png"
+      border   = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "mini-numpad-entry"
+{
+  xthickness = 4
+  ythickness = 4
+  
+  engine "themeit" 
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/entry-shadow.png"
+      border    = { 1, 1, 1, 1 }
+    }
+  }
+}
+
+style "mini-numpad-panel"
+{
+  xthickness = 16
+  ythickness = 16
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "mini-numpad"
+{
+  ITMiniNumpad::padding-left =  10
+}
+
+style "icon-above-button-text"
+{
+  font_name  = "Arial Bold 12"
+  fg[NORMAL] = "#000000"
+}
+
+style "icon-left-button-text"
+{
+  font_name  = "Arial 24"
+  fg[NORMAL] = "#000000"
+}
+
+style "button-text"
+{
+  font_name  = "Arial 24"
+  fg[NORMAL] = "#000000"
+}
+
+style "numpad-button-text"
+{
+  font_name = "Arial 28"
+  fg[NORMAL] = "#000000"
+}
+
+style "keypad-button-text"
+{
+  font_name = "Arial 18"
+  fg[NORMAL] = "#000000"
+}
+
+style "mini-numpad-button-text"
+{
+  font_name = "Arial 28"
+  fg[NORMAL] = "#000000"
+}
+
+style "digit-picker-text"
+{
+  font_name  = "Arial 100"
+  fg[NORMAL] = "#000000"
+}
+
+style "grid-icon-text"
+{
+  font_name  = "Arial Bold 12"
+  fg[NORMAL] = "#000000"
+}
+
+style "gtk-progress"
+{
+  xthickness     = 2
+  ythickness     = 2
+  font_name      = "Arial 32"
+  bg[PRELIGHT]   = "#657f96"
+
+  engine "themeit" 
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/entry-shadow.png"
+      border    = { 1, 1, 1, 1 }
+    }
+  }
+}
+
+style "bio-progress" = "gtk-progress"
+{
+  xthickness     = 2
+  ythickness     = 2
+  font_name      = "Arial 15"
+}
+
+style "progress"
+{
+  xthickness = 16
+  ythickness = 16
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "time-picker"
+{
+  xthickness = 46
+  ythickness = 16
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "gtk-scrollbar"
+{
+  GtkScrollbar::has-backward-stepper = 0
+  GtkScrollbar::has-forward-stepper  = 0
+  GtkScrollbar::has-secondary-backward-stepper = 0
+  GtkScrollbar::has-secondary-forward-stepper  = 0
+  
+  GtkRange::trough-border   = 2
+  GtkRange::slider-width    = 8
+  
+  bg[NORMAL] = "#657f96"
+}
+
+style "gtk-scrolledwindow"
+{
+  GtkScrolledWindow::scrollbar-spacing = 0
+}
+
+style "gtk-entry"
+{
+  xthickness = 2
+  ythickness = 2
+  font_name  = "Arial 32"
+  
+  engine "themeit" 
+  {
+    image 
+    {
+      function  = SHADOW
+      file      = "images/entry-shadow.png"
+      border    = { 1, 1, 1, 1 }
+    }
+  }
+}
+
+style "entry"
+{
+  xthickness = 16
+  ythickness = 16
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "scrolledWindowPanel"
+{
+  xthickness = 17
+  ythickness =  1
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/menu-panel.png"
+      border    = { 17, 17, 1, 1 }
+    }
+  }
+}
+
+style "scrolledWindowUpperPanel"
+{
+  xthickness = 8
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 14, 14, 14,  0 }
+      clipping  = {  0,  0,  0, 14 }
+    }
+  }
+}
+
+style "scrolledWindowLowerPanel"
+{
+  xthickness = 8
+  ythickness = 8
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 14, 14,  0, 14 }
+      clipping  = {  0,  0, 14,  0 }
+    }
+  }
+}
+
+style "calendar-day-button"
+{
+  xthickness    = 1
+  ythickness    = 1
+
+  engine "themeit"
+  {
+    image
+    {
+      function  = BOX
+      state     = ACTIVE
+      file      = "images/button-active.png"
+      border    = { 16, 16, 16, 16 }
+    }
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "calendar-day-button-text"
+{
+  font_name  = "Arial 21"
+  fg[NORMAL] = "#000000"
+}
+
+style "calendar-days-label"
+{
+  font_name  = "Arial 15"
+  fg[NORMAL] = "#000000"
+}
+
+style "buttonbar"
+{
+  xthickness = 10
+  ythickness = 0
+
+  ITButtonBar::width        = 180
+  ITButtonBar::row-spacing  =  10
+  ITButtonBar::padding-left =   0  
+}
+
+style "gridbuttons"
+{
+  xthickness = 0
+  ythickness = 0
+
+  ITGridButtons::row-spacing = 20
+  ITGridButtons::col-spacing = 20
+}
+
+style "left-gridbuttons" = "gridbuttons"
+{
+  ITGridButtons::padding-left =  10
+}
+
+style "left-multigridbuttons"
+{
+  xthickness = 0
+  ythickness = 0
+
+  ITGridButtons::row-spacing  = 0
+  ITGridButtons::col-spacing  = 0
+  ITGridButtons::padding-left =  10
+}
+
+style "calendar"
+{
+  xthickness = 0
+  ythickness = 0
+  ITCalendar::row-spacing = 0
+  ITCalendar::col-spacing = 0
+}
+
+style "treeview"
+{
+  ITTreeView::vertical-separator   = 32
+  ITTreeView::horizontal-separator = 32
+  ITTreeView::spacing              = 32
+  ITTreeView::data-fg              = "darkblue"
+  ITTreeView::data-font            = "Medium 18"
+  ITTreeView::data-xalign          = 1.0
+
+  text[NORMAL] = "#000000"
+  text[ACTIVE] = "#FFFFFF"  
+  bg[SELECTED] = "#657f96"
+  bg[NORMAL]   = "#FFFFFF"
+}
+
+style "numpad"
+{
+  ITNumpad::row-spacing = 0
+  ITNumpad::col-spacing = 0
+}
+
+style "keypad"
+{
+  xthickness            = 0
+  ythickness            = 32
+  ITKeypad::col-spacing = 0
+  ITKeypad::row-spacing = 0
+}
+
+style "slider"
+{
+
+  GtkRange::stepper-size    = 100
+  GtkRange::stepper-spacing =   0
+  GtkRange::slider-width    =  40
+
+  engine "themeit"
+  {
+    image 
+    {
+      function = SLIDER
+      file     = "images/flat-normal.png"
+      border   = { 1, 2, 1, 2 }
+    }
+    image 
+    {
+      function = BOX
+      state    = ACTIVE
+      file     = "images/slider.png"
+      border   = { 18, 18, 18, 18 }
+    }
+  }
+}
+
+style "bioImagePanel"
+{
+  xthickness = 1
+  ythickness = 1
+
+  engine "themeit" 
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/entry-shadow.png"
+      border    = { 1, 1, 1, 1 }
+    }
+  }
+}
+
+style "idle-info"
+{
+  xthickness = 20
+  ythickness = 20
+  ITIdleInfo::width  = 670
+  ITIdleInfo::height = 340
+  
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+style "idle-details"
+{
+  xthickness = 20
+  ythickness = 20
+  ITIdleDetails::width  = 670
+  ITIdleDetails::height = 200
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+
+}
+
+style "idle-info1"
+{
+  font_name  = "Arial 80"
+  fg[NORMAL] = "#000000"
+}
+
+style "idle-info2"
+{
+  font_name  = "Arial 21"
+  fg[NORMAL] = "#000000"
+}
+
+style "idle-info3"
+{
+  font_name  = "Arial 41"
+  fg[NORMAL] = "#000000"
+}
+
+style "solid-panel"
+{
+  xthickness = 16
+  ythickness = 16
+
+  engine "themeit"
+  {
+    image 
+    {
+      function  = BOX
+      file      = "images/button-normal.png"
+      border    = { 16, 16, 16, 16 }
+    }
+  }
+}
+
+
+class "GtkWidget"                              style "default"
+class "GtkProgressBar"                         style "gtk-progress"
+class "GtkEntry"                               style "gtk-entry"
+class "GtkScrollbar"                           style "gtk-scrollbar"
+class "GtkScrolledWindow"                      style "gtk-scrolledwindow"
+class "ITWindow"                               style "window"
+class "ITButtonBarWindow"                      style "window"
+class "ITTitledButtonBarWindow"                style "window"
+class "ITTitle"                                style "title"
+class "ITButton"                               style "button"
+class "ITUpButton"                             style "up-button"
+class "ITDownButton"                           style "down-button"
+class "ITLeftButton"                           style "left-button"
+class "ITRightButton"                          style "right-button"
+class "ITHMiddleButton"                        style "hmiddle-button"
+class "ITMiniNumpadButton"                     style "mini-numpad-button"
+class "ITMiniNumpadEntry"                      style "mini-numpad-entry"
+class "ITMiniNumpadPanel"                      style "mini-numpad-panel"
+class "ITMiniNumpad"                           style "mini-numpad"
+class "ITProgress"                             style "progress"
+class "ITTimePicker"                           style "time-picker"
+class "ITEntry"                                style "entry"
+class "ITScrolledWindowPanel"                  style "scrolledWindowPanel"
+class "ITScrolledWindowUpperPanel"             style "scrolledWindowUpperPanel"
+class "ITScrolledWindowLowerPanel"             style "scrolledWindowLowerPanel"
+class "ITButtonBar"                            style "buttonbar"
+class "ITGridButtons"                          style "gridbuttons"
+class "ITCalendar"                             style "calendar"
+class "ITTreeView"                             style "treeview"
+class "ITNumpad"                               style "numpad"
+class "ITKeypad"                               style "keypad"
+class "ITSlider"                               style "slider"
+class "ITBioImagePanel"                        style "bioImagePanel"
+class "ITGridButton"                           style "gridbutton"
+
+class "ITIdleInfo"                             style "idle-info"
+class "ITIdleDetails"                          style "idle-details"
+class "ITDetailsGridMenuPanel"                 style "solid-panel"
+
+widget_class "*.ITTitle.GtkLabel"              style "title-text"
+widget_class "*.ITButton.*.GtkLabel"           style "button-text"
+widget_class "*.ITLeftButton.*.GtkLabel"       style "button-text"
+widget_class "*.ITRightButton.*.GtkLabel"      style "button-text"
+widget_class "*.ITHMiddleButton.*.GtkLabel"    style "button-text"
+widget_class "*.ITButton.*.GtkHBox.GtkLabel"   style "icon-left-button-text"
+widget_class "*.ITButton.*.GtkVBox.GtkLabel"   style "icon-above-button-text"
+widget_class "*.ITGridButton.*.GtkVBox.GtkLabel" style "icon-above-button-text"
+widget_class "*.ITNumpad.*.GtkLabel"           style "numpad-button-text"
+widget_class "*.ITMiniNumpad.*.GtkLabel"       style "mini-numpad-button-text"
+widget_class "*.ITKeypad.*.GtkLabel"           style "keypad-button-text"
+widget_class "*.ITDigitPicker.*.GtkLabel"      style "digit-picker-text"
+widget_class "*.ITGridIcon.*.GtkLabel"         style "grid-icon-text"
+
+widget "WaitBoxView"                           style "waitbox-window"
+
+widget "*.bio-progress"                        style "bio-progress"
+widget "*.calendar-day-button"                 style "calendar-day-button"
+widget "*.calendar-day-button.*.GtkLabel"      style "calendar-day-button-text"
+widget "*.calendar-days-label"                 style "calendar-days-label"
+
+widget "*.idle-info1"                          style "idle-info1"
+widget "*.idle-info2"                          style "idle-info2"
+widget "*.idle-info3"                          style "idle-info3"
+
+widget "MsgBoxView.*.Panel"                    style "solid-panel"
+widget "MicrophoneView.*.Panel"                style "solid-panel"
+widget "SpeakerView.*.Panel"                   style "solid-panel"
+widget "WaitBoxView.Panel"                     style "solid-panel"
+widget "CancellableWaitBoxView.*.Panel"        style "solid-panel"
+widget "ReaderInputView.*.Panel"               style "solid-panel"
+widget "BioScanView.*.Panel"                   style "solid-panel"
+widget "BioImageView.*.Panel"                  style "solid-panel"
+widget "BioFingerView.*.Panel"                 style "solid-panel"
+widget "IconGridView.*.Panel"                  style "solid-panel"
+widget "IconGridMenuView.Panel"                style "solid-panel"
+widget "IdleMenuView.*.ITGridButtons"          style "left-gridbuttons"
+widget "IdleMenuWithGridButtonsView.*.ITGridButtons" style "left-multigridbuttons"
+widget "GridMenuView.*.ITGridButton"           style "gridmenu-button"
+widget "MultiGridMenuView.*.ITGridButton"      style "gridmenu-button"
+
+class "GtkButton"                              style "default-gtk"
+
+

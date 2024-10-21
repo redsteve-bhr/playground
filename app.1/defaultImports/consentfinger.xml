@@ -1,0 +1,80 @@
+<consent>
+    <configuration>
+        <messages>
+            <message language="en">
+                By clicking below, I represent and agree that I have read and agree to the Terms and Conditions of Use and Privacy Policy. I hereby
+                agree and authorise the collection of biometric identifiers about me for the employment-related
+                 authentication purposes and limited duration set out in the Privacy Policy.
+            </message>
+            <message language="cz">
+                Kliknutím níže vyjadřuji svůj souhlas s tím, že jsem si přečetl/a smluvní podmínky použití a zásady ochrany osobních údajů. Tímto
+                vyjadřují souhlas se shromažďováním biometrických identifikačních údajů týkajících se mé osoby, a to včetně identifikačních údajů ve
+                formě otisků prstů a rozpoznávání tváře, pro účely ověření v rámci pracovního poměru a po dobu trvání stanovenou zásadami ochrany
+                osobních údajů a toto shromažďování povoluji.
+            </message>
+            <message language="da">
+                Ved at klikke nedenfor erklærer og accepterer jeg, at jeg har læst og accepterer brugsvilkårene og -betingelserne og
+                privatlivspolitikken. Jeg accepterer og godkender hermed indsamlingen af biometriske identifikatorer om mig, herunder fingeraftryk og
+                ansigtsgenkendelsesidentifikatorer, til de ansættelsesrelaterede godkendelsesformål og den begrænsede varighed, der er angivet i
+                privatlivspolitikken.
+            </message>
+            <message language="de">
+                Durch Klicken auf die Schaltfläche unten erkläre ich, dass ich die Nutzungsbedingungen und die Datenschutzrichtlinie gelesen habe und
+                damit einverstanden bin. Hiermit stimme ich der Erfassung biometrischer Identifikationsmerkmalen über mich, einschließlich
+                Fingerabdruck- und Gesichtserkennungsidentifikatoren, für die in der Datenschutzrichtlinie dargelegten arbeitnehmerbezogenen
+                Authentifizierungszwecke und für eine begrenzte Dauer zu und genehmige diese.
+            </message>
+            <message language="es">
+                Al hacer clic a continuación, declaro que he leído y acepto los Términos y condiciones de uso y la Regla de privacidad. Por la
+                presente, acepto y autorizo la recopilación de identificadores biométricos sobre mí, incluidos identificadores de huellas dactilares y
+                reconocimiento facial, para fines de autentificación relacionados con el empleo y duración limitada establecida en la Regla de
+                privacidad.
+            </message>
+            <message language="fi">
+                Napsauttamalla alta vahvistan lukeneeni ja hyväksyväni käyttöehdot sekä tietosuojakäytännön. Hyväksyn ja valtuutan biometristen
+                tunnistustietojeni keräämisen, mukaan lukien sormenjälki- ja kasvojentunnistustiedot, työsuhteeseen liittyviin valtuutustarkoituksiin
+                rajoitetun ajan tietosuojakäytännössä kuvatulla tavalla.
+            </message>
+            <message language="fr">
+                En cliquant ci-dessous, je confirme avoir lu et approuvé les conditions générales d’utilisation et la politique de confidentialité.
+                J’accepte et autorise par la présente la collecte de mes identifiants biométriques, notamment mes empreintes digitales et ma
+                reconnaissance faciale, à des fins d’authentification dans le cadre de mon emploi et pour la durée limitée spécifiée dans la politique
+                de confidentialité.
+            </message>
+            <message language="it">
+                Cliccando di seguito, rappresento e accetto di aver letto i Termini e Condizioni della Policy di Utilizzo e Privacy. Con la presente
+                accetto e autorizzo la raccolta di dati biometrici identificatori su di me, comprese impronte digitali e identificatori di
+                riconoscimento facciale, per scopi di identificazione legati al lavoro e con durata limitata stabilita nella Policy sulla Privacy.
+            </message>
+            <message language="no">
+                Ved å klikke nedenfor representerer og samtykker jeg i at jeg har lest og godtatt bruksvilkårene og retningslinjene for personvern.
+                Jeg godtar herved og autoriserer innsamling av biometriske identifikatorer om meg, deriblant fingeravtrykk og identifikatorer for
+                ansiktsgjenkjenning, for de sysselsettingsrelaterte godkjenningsformålene og den begrensede varigheten som er fastsatt i
+                retningslinjene for personvern.
+            </message>
+            <message language="nl">
+                Door hieronder te klikken bevestig ik dat ik de Algemene Gebruiksvoorwaarden en het Privacybeleid heb gelezen en ermee akkoord ga. Ik
+                ga akkoord met de inzameling van biometrische identificatiemiddelen bedoeld voor arbeidsgerelateerde
+                 authenticatie en gedurende de beperkte periode zoals uiteengezet in het Privacybeleid.
+            </message>
+            <message language="pl">
+                Klikając poniżej, oświadczam, że przeczytałem/-am i zgadzam się z Warunkami korzystania z tej platformy i Polityką prywatności.
+                Niniejszym wyrażam zgodę i zezwalam na pozyskanie danych biometrycznych o mnie, w tym odcisków palców i elementów rozpoznawania
+                twarzy, w celach uwierzytelnienia związanych z zatrudnieniem i na czas określony w Polityce prywatności.
+            </message>
+            <message language="pt">
+                Ao clicar abaixo, confirmo que li e concordo com os Termos e Condições de Utilização e a Regra de Privacidade. Pelo presente concordo
+                e autorizo a recolha de identificadores biométricos sobre mim, incluindo impressões digitais e reconhecimento facial, para fins de
+                autenticação relacionada com o emprego e duração limitada definida na Regra de Privacidade.
+            </message>
+            <message language="se">
+                Genom att klicka nedan, intygar och medger jag att jag har läst och samtycker till Användarvillkoren och Sekretesspolicyn. Jag
+                samtycker härmed till och godkänner insamlingen av biometriska identifierare om mig, inklusive identifierare av fingeravtryck och
+                ansiktsigenkänning, för de anställningsrelaterade autentiseringsändamålen och den begränsade varaktighet som anges i Sekretesspolicyn.
+            </message>
+        </messages>
+        <expiryTimeInDays>365</expiryTimeInDays>
+        <daysToGiveWarning>30</daysToGiveWarning>
+    </configuration>
+    <signature />
+</consent>

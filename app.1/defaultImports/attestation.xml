@@ -1,0 +1,58 @@
+<attestation>
+
+    <!-- This allows the text and buttons of the attestation dialog presented to the employee to be configured.-->
+    <promptDialog>
+        <prompt>
+            <text language="en">I attest that my shifts were accurately recorded, and that no time
+                was additionally worked outside my punch times.
+                I attest that I received my meal and rest periods as prescribed by law and that
+                these periods were uninterrupted. I attest that I was not injured.
+            </text>
+            <text language="de">Ich bezeuge, dass meine Schichten genau aufgezeichnet wurden und dass keine Zeit
+                wurde zusätzlich außerhalb meiner Schlagzeiten gearbeitet.
+                Ich bestätige, dass ich meine Essens- und Ruhezeiten wie gesetzlich vorgeschrieben erhalten habe und dass
+                diese Perioden waren ununterbrochen. Ich bezeuge, dass ich nicht verletzt wurde.
+            </text>
+        </prompt>
+
+        <agreeButton>
+            <label>
+                <text language="en">I agree</text>
+                <text language="de">Ich stimme zu</text>
+            </label>
+        </agreeButton>
+
+        <!-- Clicking this button results in the employee being prompted to select reasons for complaint-->
+        <disagreeButton>
+            <label>
+                <text language="en">I disagree</text>
+                <text language="de">Ich stimme nicht zu</text>
+            </label>
+        </disagreeButton>
+    </promptDialog>
+
+    <!-- One or more reasons of the following reasons can be selected by the employee.-->
+    <reasons>
+        <reason>
+            <id>222</id>
+            <icon>ic_supervisor</icon>
+            <text language="en">I missed my lunch</text>
+        </reason>
+        <reason>
+            <id>223</id>
+            <icon>ic_service</icon>
+            <text language="en">I missed my break</text>
+        </reason>
+        <reason>
+            <id>224</id>
+            <icon>ic_service</icon>
+            <text language="en">I worked extra hours</text>
+        </reason>
+        <reason>
+            <id>225</id>
+            <icon>ic_service</icon>
+            <text language="en">I was bullied</text>
+        </reason>
+    </reasons>
+
+</attestation>

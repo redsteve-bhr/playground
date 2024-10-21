@@ -1,0 +1,163 @@
+{
+    "version": "${version}",
+    "versionCode": "${version}",
+    "publisher": "Grosvenor Technology Ltd",
+    "displayName": "IT EasyClock-WS",
+    "packageType": "application",
+    "packageName": "com.gtl.it.application.easyclock.ws",
+    "packageGroupId": "13c05335-628b-43cb-8cb7-35d3d76c8bc5",
+    "fileTypeId": "8F33958C-C7E1-46A7-8450-056C3DAF9333",
+    "prerequisites": {},
+    "configuration": [],
+    "files": [
+        {
+            "name": {
+                "en": "Buttons"
+            },
+            "defaultFileName": "buttons.xml",
+            "resourceName": "buttons",
+            "type": "it-buttons-v1",
+            "canSend": true,
+            "canRequest": true
+        },
+        {
+            "name": {
+                "en": "Employees Report"
+            },
+            "defaultFileName": "employeesReport.xml",
+            "resourceName": "employeesReport",
+            "type": "it-employeesReport-v1",
+            "canSend": false,
+            "canRequest": true
+        },
+        {
+            "name": {
+                "en": "Relays"
+            },
+            "defaultFileName": "relays.xml",
+            "resourceName": "relays",
+            "type": "it-relays-v1",
+            "canSend": true,
+            "canRequest": true
+        },
+        {
+            "name": {
+                "en": "Data Collection"
+            },
+            "defaultFileName": "datacollection.xml",
+            "resourceName": "dataCollection",
+            "type": "it-datacollection-v1",
+            "canSend": true,
+            "canRequest": true
+        }
+    ],
+    "commands": [
+        {
+            "name": {
+                "en": "Resend Clockings"
+            },
+            "commandName": "resendClockings",
+            "help": {
+                "en": "This action will cause the terminal to resend employee clockings (mark employee clockings as unsent) from the startDate."
+            },
+            "requestWarning": {
+                "en": "The 'Resending clockings' action a can generate a lot of traffic from the device, do you wish to continue?"
+            },
+            "parameters": {
+                "startDate": {
+                    "display": {
+                        "en": "Start Date"
+                    },
+                    "help": {
+                        "en": "Resend all clockings after this date & time"
+                    },
+                    "type": "dateTimeUtc"
+                }
+            }
+        },
+        {
+            "name": {
+                "en": "Resend Profiles"
+            },
+            "commandName": "resendProfiles",
+            "help": {
+                "en": "This action will cause the terminal to resend employee profiles (mark employee updates as unsent e.g. enrolments) from the startDate."
+            },
+            "requestWarning": {
+                "en": "The 'Resending Profiles' action a can generate a lot of traffic from the device, do you wish to continue?"
+            },
+            "parameters": {
+                "startDate": {
+                    "display": {
+                        "en": "Start Date"
+                    },
+                    "help": {
+                        "en": "Resend all clockings after this date & time"
+                    },
+                    "type": "dateTimeUtc"
+                }
+            }
+        },
+        {
+            "name": {
+                "en": "Delete Downloaded Files"
+            },
+            "help": {
+                "en": "This command will delete all downloaded configuration files (e.g. buttons & consent) and revert to default versions where avaliable."
+            },
+            "commandName": "deleteDownloadedFiles",
+            "warning": {
+                "en": "This will delete all custom files on the device, are you sure you want to continue?"
+            }
+        },
+        {
+            "name": {
+                "en": "Clear Clockings"
+            },
+            "commandName": "clearClockings",
+            "help": {
+                "en": "This action will cause the terminal to mark all clockings as sent that were created before the endDate. This does not physically delete the clocking from the terminal."
+            },
+            "parameters": {
+                "endDate": {
+                    "display": {
+                        "en": "End Date"
+                    },
+                    "help": {
+                        "en": "Clear all clockings before this date & time"
+                    },
+                    "type": "dateTimeUtc"
+                }
+            }
+        },
+        {
+            "name": {
+                "en": "Trace Route"
+            },
+            "commandName": "traceRoute",
+            "help": {
+                "en": "This action will cause the terminal to carry out a trace route to the provided destination route."
+            },
+            "parameters": {
+                "targetUrl": {
+                    "display": {
+                        "en": "Target FQDN"
+                    },
+                    "help": {
+                        "en": "The FQDN to test"
+                    },
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "name": {
+                "en": "NTP Test"
+            },
+            "commandName": "ntpTest",
+            "help": {
+                "en": "This action will cause the terminal to perfom a local NTP test and upload the results"
+            }
+        }
+    ]
+}
