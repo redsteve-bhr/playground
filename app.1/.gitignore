@@ -1,7 +1,0 @@
-/build
-/manual/build
-/defaultImports/buttons.xsd
-*.pyc
-.DS_Store
-.settings
-*~
