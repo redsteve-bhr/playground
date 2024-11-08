@@ -5,6 +5,8 @@
 # to a local directory with the same name as the repo. 
 # The script can be run with the following command: 
 # ./scan.sh https://github.com/org/repo.git
+# Or, to loop through a file:
+# while IFS= read -r line; do ./scan.sh $line; done < repo_list.txt
 
 # Check if the user has provided a git repo as input
 if [ -z "$1" ]; then
