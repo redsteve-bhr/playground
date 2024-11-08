@@ -19,6 +19,10 @@ if [[ ! $1 =~ ^https://github.com/.*\.git$ ]]; then
 fi
 
 # Set up variables
+export USE_VDB_10Y=true
+export FETCH_LICENSE=true
+EXEC_DIR=$PWD 
+# A GITHUB_TOKEN must exist to download security advisories from GitHub
 GIT_CREDS=$GITHUB_TOKEN
 # Remove https://github.com/ and .git from the git repo path
 REPO=$(echo $1 | sed 's|https://github\.com/||' | sed 's|.git$||')
@@ -40,4 +44,6 @@ echo "---- Successfully cloned https://gitlab.com/$REPO.git"
 
 # Run the sca-scan command on the cloned repo
 echo "--- Running sca-scan on $LOCAL_DIR"
+cd $LOCAL_DIR
+depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports
 exit 0
