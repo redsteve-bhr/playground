@@ -46,4 +46,8 @@ echo "---- Successfully cloned https://gitlab.com/$REPO.git"
 echo "--- Running sca-scan on $LOCAL_DIR"
 cd $LOCAL_DIR
 depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
+
+# Once scan is complete, rename and move the generated bom file to the reports directory
+mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
+
 exit 0
