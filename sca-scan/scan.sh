@@ -48,6 +48,11 @@ cd $LOCAL_DIR
 depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
 
 # Once scan is complete, rename and move the generated bom file to the reports directory
+echo "--- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json"
 mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
+
+echo "--- sca-scan completed, cleaning up"
+cd $EXEC_DIR
+rm -rf $LOCAL_DIR
 
 exit 0
