@@ -39,7 +39,8 @@ REPO_NAME=$(basename $REPO)
 LOCAL_DIR=$PWD/$REPO_NAME
 
 # Shallow clone the git repo to a local directory
-echo "--- Cloning https://gitlab.com/$REPO.git"
+echo -e "\n---- sca-scan starting\n"
+echo "---- Cloning https://gitlab.com/$REPO.git"
 git clone --depth=1 https://oauth2:$GIT_CREDS@github.com/$REPO.git $LOCAL_DIR
 
 # Check if the clone was successful
@@ -50,15 +51,15 @@ fi
 echo "---- Successfully cloned https://gitlab.com/$REPO.git"
 
 # Run the sca-scan command on the cloned repo
-echo "--- Running sca-scan on $LOCAL_DIR"
+echo "---- Running sca-scan on $LOCAL_DIR"
 cd $LOCAL_DIR
-depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
+depscan --no-banner --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
 
 # Once scan is complete, rename and move the generated bom file to the reports directory
-echo "--- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json\n"
+echo "---- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json\n"
 mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
 
-echo "--- sca-scan completed, cleaning up\n\n"
+echo -e "---- sca-scan completed, cleaning up\n\n"
 cd $EXEC_DIR
 rm -rf $LOCAL_DIR
 
