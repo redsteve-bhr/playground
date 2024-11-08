@@ -45,5 +45,5 @@ echo "---- Successfully cloned https://gitlab.com/$REPO.git"
 # Run the sca-scan command on the cloned repo
 echo "--- Running sca-scan on $LOCAL_DIR"
 cd $LOCAL_DIR
-depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports
+depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
 exit 0
