@@ -24,6 +24,11 @@ export FETCH_LICENSE=true
 EXEC_DIR=$PWD 
 # A GITHUB_TOKEN must exist to download security advisories from GitHub
 GIT_CREDS=$GITHUB_TOKEN
+# Check if the GITHUB_TOKEN exists
+if [ -z "$GIT_CREDS" ]; then
+  echo "Please set the GITHUB_TOKEN environment variable"
+  exit 1
+fi
 # Remove https://github.com/ and .git from the git repo path
 REPO=$(echo $1 | sed 's|https://github\.com/||' | sed 's|.git$||')
 # Get the name of the repo without .git extension
@@ -48,10 +53,10 @@ cd $LOCAL_DIR
 depscan --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
 
 # Once scan is complete, rename and move the generated bom file to the reports directory
-echo "--- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json"
+echo "--- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json\n"
 mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
 
-echo "--- sca-scan completed, cleaning up"
+echo "--- sca-scan completed, cleaning up\n\n"
 cd $EXEC_DIR
 rm -rf $LOCAL_DIR
 
