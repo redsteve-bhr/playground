@@ -8,6 +8,8 @@
 # Or, to loop through a file:
 # while IFS= read -r line; do ./scan.sh $line; done < repo_list.txt
 
+# NOTE: Need to pull vdb (see https://github.com/appthreat/vdb/pkgs/container/vdb) before running scan.
+
 # Check if the user has provided a git repo as input
 if [ -z "$1" ]; then
   echo "Please provide a git repo as input in the format https://github.com/org/repo.git"
@@ -20,8 +22,7 @@ if [[ ! $1 =~ ^https://github.com/.*\.git$ ]]; then
   exit 1
 fi
 
-# Set up variables
-export USE_VDB_10Y=true
+# Set up variables for the depscan command
 export FETCH_LICENSE=true
 EXEC_DIR=$PWD 
 # A GITHUB_TOKEN must exist to download security advisories from GitHub
