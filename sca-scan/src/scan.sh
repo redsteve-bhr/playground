@@ -40,7 +40,7 @@ REPO_NAME=$(basename $REPO)
 LOCAL_DIR=$PWD/$REPO_NAME
 
 # Shallow clone the git repo to a local directory
-echo -e "\n---- sca-scan starting\n"
+echo -e "\n---- SCA SCAN STARTING ----\n"
 echo "---- Cloning https://gitlab.com/$REPO.git"
 git clone --depth=1 https://oauth2:$GIT_CREDS@github.com/$REPO.git $LOCAL_DIR
 
@@ -49,19 +49,26 @@ if [ $? -ne 0 ]; then
   echo "ERROR: Failed to clone the repo"
   exit 1
 fi
-echo "---- Successfully cloned https://gitlab.com/$REPO.git"
+echo -e "---- Successfully cloned https://gitlab.com/$REPO.git\n"
 
-# Run the sca-scan command on the cloned repo
-echo "---- Running sca-scan on $LOCAL_DIR"
+# generate an SBOM for the repo
+echo -e "---- Generating SBOM for $LOCAL_DIR\n"
 cd $LOCAL_DIR
-depscan --no-banner --debug --src $LOCAL_DIR --profile appsec --no-vuln-table --reports-dir $EXEC_DIR/reports --report-name $REPO_NAME
+cdxgen -r --profile appsec -o $REPO_NAME-bom.json
+# TODO Look into using Syft for this
 
-# Once scan is complete, rename and move the generated bom file to the reports directory
-echo "---- Moving bom.json to $EXEC_DIR/reports/$REPO_NAME-bom.json\n"
+# Once bom generation is complete, rename and move the generated bom file to the reports directory
+echo -e "---- Moving $REPO_NAME-bom.json to $EXEC_DIR/reports\n\n"
 mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
 
-echo -e "---- sca-scan completed, cleaning up\n\n"
-cd $EXEC_DIR
+# perform semgrep scan on the repo
+echo -e "---- Running semgrep on $REPO_NAME\n"
+semgrep scan --config auto --json-output=/scan/reports/$REPO_NAME-sca.json
+
+# perform grype scan on the repo
+echo -e "---- Running grype on $REPO_NAME\n"
+
+echo -e "---- SCA scan completed, cleaning up\n\n"
 rm -rf $LOCAL_DIR
 
 exit 0
