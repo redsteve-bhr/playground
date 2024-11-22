@@ -16,4 +16,6 @@ RUN apt-get update && \
 
 COPY ./src /app
 
+RUN chmod +x /app/scan.sh
+
 ENTRYPOINT ["/app/scan.sh"]

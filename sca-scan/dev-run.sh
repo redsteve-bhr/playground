@@ -14,4 +14,4 @@ docker run -it \
     -e GITHUB_TOKEN=$GITHUB_PAT \
     -v $(pwd):/scan \
     --name sca-scanner-dev \
-    sca-scanner-dev https://github.com/BambooHR/communication-service.git
+    sca-scanner-dev "$1"
