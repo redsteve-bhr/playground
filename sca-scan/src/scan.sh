@@ -54,19 +54,21 @@ echo -e "---- Successfully cloned https://gitlab.com/$REPO.git\n"
 # generate an SBOM for the repo
 echo -e "---- Generating SBOM for $LOCAL_DIR\n"
 cd $LOCAL_DIR
-cdxgen -r --profile appsec -o $REPO_NAME-bom.json
+cdxgen -r --profile appsec -o /scan/reports/$REPO_NAME-bom.json
 # TODO Look into using Syft for this
-
-# Once bom generation is complete, rename and move the generated bom file to the reports directory
-echo -e "---- Moving $REPO_NAME-bom.json to $EXEC_DIR/reports\n\n"
-mv bom.json $EXEC_DIR/reports/$REPO_NAME-bom.json
 
 # perform semgrep scan on the repo
 echo -e "---- Running semgrep on $REPO_NAME\n"
 semgrep scan --config auto --json-output=/scan/reports/$REPO_NAME-sca.json
 
+# perform syft scan on the repo
+echo -e "---- Running syft on $REPO_NAME\n"
+syft -o syft-json=/scan/reports/$REPO_NAME-syft.json --from dir $LOCAL_DIR
+
 # perform grype scan on the repo
 echo -e "---- Running grype on $REPO_NAME\n"
+grype -o json=/scan/reports/$REPO_NAME-grype.json sbom:/scan/reports/$REPO_NAME-syft.json
+
 
 echo -e "---- SCA scan completed, cleaning up\n\n"
 rm -rf $LOCAL_DIR

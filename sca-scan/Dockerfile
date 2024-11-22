@@ -8,9 +8,11 @@ WORKDIR /scan
 
 
 RUN apt-get update && \
-    apt-get install -y git nodejs npm && \
+    apt-get install -y git nodejs npm curl && \
     npm install -g @cyclonedx/cdxgen && \
-    python3 -m pip install semgrep
+    python3 -m pip install semgrep && \
+    curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin && \
+    curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
 
 COPY ./src /app
 
