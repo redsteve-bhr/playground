@@ -36,22 +36,18 @@ scan_repo() {
     return
   fi
 
-  # generate an SBOM for the repo
-  echo -e "---- Generating SBOM for $LOCAL_DIR\n"
-  cd $LOCAL_DIR
-  cdxgen -r --profile appsec -o /scan/reports/$REPO_NAME-bom.json
-
   # perform semgrep scan on the repo
   echo -e "---- Running semgrep on $REPO_NAME\n"
   semgrep scan --config auto --json-output=/scan/reports/$REPO_NAME-sca.json
 
   # perform syft scan on the repo
   echo -e "---- Running syft on $REPO_NAME\n"
-  syft -o syft-json=/scan/reports/$REPO_NAME-syft.json --from dir $LOCAL_DIR
+  syft scan -o syft-json=/scan/reports/$REPO_NAME-syft.json dir:$LOCAL_DIR
+  # TODO We can also use syft to generate a SPDX, CycloneDX, or similar file
 
   # perform grype scan on the repo
   echo -e "---- Running grype on $REPO_NAME\n"
-  grype -o json=/scan/reports/$REPO_NAME-grype.json sbom:/scan/reports/$REPO_NAME-syft.json
+  grype -o json=/scan/reports/$REPO_NAME-grype.json -o template=/scan/reports/$REPO_NAME-grype.html -t /usr/local/share/html.tmpl sbom:/scan/reports/$REPO_NAME-syft.json
 
   echo -e "---- SCA scan completed for $REPO_NAME, cleaning up\n\n"
   rm -rf $LOCAL_DIR

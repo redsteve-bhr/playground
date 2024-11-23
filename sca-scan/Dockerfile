@@ -12,7 +12,8 @@ RUN apt-get update && \
     npm install -g @cyclonedx/cdxgen && \
     python3 -m pip install semgrep && \
     curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin && \
-    curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+    curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin && \
+    curl -sSfL https://raw.githubusercontent.com/anchore/grype/refs/heads/main/templates/html.tmpl -o /usr/local/share/html.tmpl
 
 COPY ./src /app
 
