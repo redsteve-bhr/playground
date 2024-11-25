@@ -47,8 +47,8 @@ scan_repo() {
 
   # perform grype scan on the repo. Run twice to generate HTML report
   echo -e "---- Running grype on $REPO_NAME\n"
-  grype -o json=/scan/reports/$REPO_NAME-grype.json sbom:/scan/reports/$REPO_NAME-syft.json
-  grype -o template=/scan/reports/$REPO_NAME-grype.html -t /usr/local/share/html.tmpl sbom:/scan/reports/$REPO_NAME-syft.json
+  grype -o json=/scan/reports/$REPO_NAME-grype.json dir:$LOCAL_DIR
+  grype -o template=/scan/reports/$REPO_NAME-grype.html -t /usr/local/share/html.tmpl dir:$LOCAL_DIR
 
   echo -e "---- SCA scan completed for $REPO_NAME, cleaning up\n\n"
   rm -rf $LOCAL_DIR
@@ -60,9 +60,6 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Set up variables for the depscan command
-export FETCH_LICENSE=true
-EXEC_DIR=$PWD
 # A GITHUB_TOKEN must exist to download security advisories from GitHub
 GIT_CREDS=$GITHUB_TOKEN
 # Check if the GITHUB_TOKEN exists

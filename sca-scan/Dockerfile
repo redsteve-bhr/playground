@@ -6,7 +6,6 @@ LABEL description="An image for an SCA scanning tool."
 
 WORKDIR /scan
 
-
 RUN apt-get update && \
     apt-get install -y git nodejs npm curl && \
     npm install -g @cyclonedx/cdxgen && \
