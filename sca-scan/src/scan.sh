@@ -45,9 +45,9 @@ scan_repo() {
   syft scan -o syft-json=/scan/reports/$REPO_NAME-syft.json dir:$LOCAL_DIR
   # TODO We can also use syft to generate a SPDX, CycloneDX, or similar file
 
-  # perform grype scan on the repo
+  # perform grype scan on the repo. Run twice to generate HTML report
   echo -e "---- Running grype on $REPO_NAME\n"
- # grype -o json=/scan/reports/$REPO_NAME-grype.json sbom:/scan/reports/$REPO_NAME-syft.json
+  grype -o json=/scan/reports/$REPO_NAME-grype.json sbom:/scan/reports/$REPO_NAME-syft.json
   grype -o template=/scan/reports/$REPO_NAME-grype.html -t /usr/local/share/html.tmpl sbom:/scan/reports/$REPO_NAME-syft.json
 
   echo -e "---- SCA scan completed for $REPO_NAME, cleaning up\n\n"
