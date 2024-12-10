@@ -20,38 +20,49 @@ scan_repo() {
   fi
 
   # Remove https://github.com/ and .git from the git repo path
-  REPO=$(echo $repo_url | sed 's|https://github\.com/||' | sed 's|.git$||')
+  local repo=$(echo "$repo_url" | sed 's|https://github\.com/||' | sed 's|.git$||')
   # Get the name of the repo without .git extension
-  REPO_NAME=$(basename $REPO)
+  local repo_name=$(basename "$repo")
   # Set up local directory to clone into
-  LOCAL_DIR=$PWD/$REPO_NAME
+  local local_dir=$PWD/$repo_name
 
   # Shallow clone the git repo to a local directory
-  echo -e "\n---- SCA SCAN STARTING for $REPO_NAME ----\n"
-  git clone --depth=1 https://oauth2:$GIT_CREDS@github.com/$REPO.git $LOCAL_DIR
+  echo -e "\n---- SCA SCAN STARTING for $repo_name ----\n"
+  git clone --depth=1 https://oauth2:"$GIT_CREDS"@github.com/"$repo".git "$local_dir"
 
   # Check if the clone was successful
   if [ $? -ne 0 ]; then
-    echo "ERROR: Failed to clone the repo $REPO_NAME"
+    echo "ERROR: Failed to clone the repo $repo_name"
     return
   fi
 
-  # perform semgrep scan on the repo
-  echo -e "---- Running semgrep on $REPO_NAME\n"
-  semgrep scan --config auto --json-output=/scan/reports/$REPO_NAME-sca.json
-
   # perform syft scan on the repo
-  echo -e "---- Running syft on $REPO_NAME\n"
-  syft scan -o syft-json=/scan/reports/$REPO_NAME-syft.json dir:$LOCAL_DIR
+  echo -e "---- Running syft on $repo_name\n"
+  syft scan -v -o cyclonedx-xml=/output/reports/"$repo_name"-cdx.xml dir:"$local_dir"
   # TODO We can also use syft to generate a SPDX, CycloneDX, or similar file
 
   # perform grype scan on the repo. Run twice to generate HTML report
-  echo -e "---- Running grype on $REPO_NAME\n"
-  grype -o json=/scan/reports/$REPO_NAME-grype.json dir:$LOCAL_DIR
-  grype -o template=/scan/reports/$REPO_NAME-grype.html -t /usr/local/share/html.tmpl dir:$LOCAL_DIR
+  # echo -e "---- Running grype on $repo_name\n"
+  # grype -v -o json=/output/reports/"$repo_name"-grype.json dir:"$local_dir"
+  # grype -v -o template=/output/reports/"$repo_name"-grype.html -t /usr/local/share/html.tmpl dir:"$local_dir"
 
-  echo -e "---- SCA scan completed for $REPO_NAME, cleaning up\n\n"
-  rm -rf $LOCAL_DIR
+  # perform semgrep scan on the repo
+  # echo -e "---- Running semgrep on $repo_name\n"
+  # semgrep scan --config auto --json-output=/output/reports/"$repo_name"-sca.json
+
+  echo -e "---- Uploading to Dependency Track\n"
+  curl --request POST \
+  --url http://dependency-track-dtrack-apiserver-1:8080/api/v1/bom \
+  --header "X-Api-Key: $DEPTRACK_API_KEY" \
+  --header 'content-type: multipart/form-data' \
+  --form autoCreate=true \
+  --form projectName="$repo_name" \
+  --form projectVersion=2024.11.27 \
+  --form isLatest=true \
+  --form bom=@/output/reports/"$repo_name"-cdx.xml
+
+  echo -e "---- SCA scan completed for $repo_name, cleaning up\n\n"
+  rm -rf "$local_dir"
 }
 
 # Main script logic
@@ -70,12 +81,15 @@ fi
 
 if [ -f "$1" ]; then
   # If the input is a file, read each line as a repo URL
-  while IFS= read -r repo_url; do
-    scan_repo "$repo_url"
+  while IFS= read -r url; do
+    scan_repo "$url"
   done < "$1"
 else
   # Otherwise, treat the input as a single repo URL
   scan_repo "$1"
 fi
+
+cp -r /output/reports /scan/reports
+# TODO: Look at uploading the data to DependencyTrack or similar
 
 exit 0
