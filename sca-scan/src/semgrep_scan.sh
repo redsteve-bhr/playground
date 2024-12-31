@@ -8,6 +8,7 @@
 # Or, to loop through a file:
 # while IFS= read -r line; do ./scan.sh $line; done < repo_list.txt
 
+# NOTE: Need to pull vdb (see https://github.com/appthreat/vdb/pkgs/container/vdb) before running scan.
 
 # Function to perform scan on a single repository
 scan_repo() {
@@ -36,8 +37,8 @@ scan_repo() {
   fi
 
   # perform syft scan on the repo
-  echo -e "---- Running syft on $repo_name\n"
-  syft scan -v -o cyclonedx-xml=/output/reports/"$repo_name"-cdx.xml dir:"$local_dir"
+  # echo -e "---- Running syft on $repo_name\n"
+  # syft scan -v -o cyclonedx-xml=/output/reports/"$repo_name"-cdx.xml dir:"$local_dir"
   # TODO We can also use syft to generate a SPDX, CycloneDX, or similar file
 
   # perform grype scan on the repo. Run twice to generate HTML report
@@ -46,19 +47,20 @@ scan_repo() {
   # grype -v -o template=/output/reports/"$repo_name"-grype.html -t /usr/local/share/html.tmpl dir:"$local_dir"
 
   # perform semgrep scan on the repo
-  # echo -e "---- Running semgrep on $repo_name\n"
-  # semgrep scan --config auto --json-output=/output/reports/"$repo_name"-sca.json
+  echo -e "---- Running semgrep on $repo_name\n"
+  semgrep scan --config auto --sarif --sarif-output=/output/reports/"$repo_name"-sca.sarif
 
-  echo -e "---- Uploading to Dependency Track\n"
-  curl --request POST \
-  --url http://dependency-track-dtrack-apiserver-1:8080/api/v1/bom \
-  --header "X-Api-Key: $DEPTRACK_API_KEY" \
-  --header 'content-type: multipart/form-data' \
-  --form autoCreate=true \
-  --form projectName="$repo_name" \
-  --form projectVersion=2024.11.27 \
-  --form isLatest=true \
-  --form bom=@/output/reports/"$repo_name"-cdx.xml
+  
+  # echo -e "---- Uploading to Dependency Track\n"
+  # curl --request POST \
+  # --url http://dependency-track-dtrack-apiserver-1:8080/api/v1/bom \
+  # --header "X-Api-Key: $DEPTRACK_API_KEY" \
+  # --header 'content-type: multipart/form-data' \
+  # --form autoCreate=true \
+  # --form projectName="$repo_name" \
+  # --form projectVersion=2024.11.27 \
+  # --form isLatest=true \
+  # --form bom=@/output/reports/"$repo_name"-cdx.xml
 
   echo -e "---- SCA scan completed for $repo_name, cleaning up\n\n"
   rm -rf "$local_dir"
