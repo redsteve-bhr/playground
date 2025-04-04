@@ -16,11 +16,15 @@ A Slack bot that acts as a personal assistant, responding to keyword-based comma
    - Create a new app
    - Enable Socket Mode
    - Generate an App-Level Token with `connections:write` scope
-   - Add bot event subscriptions for `message.channels`
+   - Add bot event subscriptions for `app_mention` and `message.channels`
    - Under "OAuth & Permissions", add these scopes:
      - `channels:history`
+     - `groups:history`
+     - `im:history`
+     - `mpim:history`
      - `channels:read`
      - `chat:write`
+     - `users:read`
    - Install the app to your workspace
 
 2. Set your environment variables:
@@ -43,7 +47,7 @@ A Slack bot that acts as a personal assistant, responding to keyword-based comma
 ## Available Commands
 Mention the bot by its Slack display name (e.g., @Security Bot) followed by a command:
 - `help` - Shows a list of all available commands with descriptions
-- `summarize` - Provides a summary of the last 24 hours of conversation in the current channel
+- `summarize [days]` - Provides a meaningful summary of conversations in the channel. Optionally specify the number of days to look back (default: 1, max: 7)
 - `channel-info` - Shows detailed information about the current channel including creation date, member count, and purpose
 
 You can also just mention the bot without any command to see the help message.
@@ -52,6 +56,8 @@ Example:
 ```
 @Security Bot help
 @Security Bot channel-info
+@Security Bot summarize
+@Security Bot summarize 3
 ```
 
 ## Adding New Commands
